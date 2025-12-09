@@ -84,3 +84,1245 @@
 2025/12/08 23:15:48 📧 [MOCK EMAIL] To: huangdebao_2009@163.com | Code: 4146
 2025/12/08 23:19:46 📝 [Register] Attempting registration for Email: huangdebao_2010@163.com, Password: 123456
 2025/12/08 23:19:46 📧 [MOCK EMAIL] To: huangdebao_2010@163.com | Code: 1792
+2025/12/09 14:50:36 ⚠️ Warning: todo_user_db_0 unreachable: Error 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+2025/12/09 14:50:36 ⚠️ Warning: todo_user_db_1 unreachable: Error 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+2025/12/09 14:50:36 ⚠️ Warning: todo_user_db_2 unreachable: Error 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+2025/12/09 14:50:36 ⚠️ Warning: todo_user_db_3 unreachable: Error 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+2025/12/09 14:50:36 ⚠️ Warning: todo_user_db_4 unreachable: Error 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+2025/12/09 14:50:36 ⚠️ Warning: todo_user_db_5 unreachable: Error 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+2025/12/09 14:50:36 ⚠️ Warning: todo_user_db_6 unreachable: Error 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+2025/12/09 14:50:36 ⚠️ Warning: todo_user_db_7 unreachable: Error 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+2025/12/09 14:50:36 ⚠️ Warning: todo_user_db_8 unreachable: Error 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+2025/12/09 14:50:36 ⚠️ Warning: todo_user_db_9 unreachable: Error 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+2025/12/09 14:50:36 ⚠️ Warning: todo_user_db_10 unreachable: Error 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+2025/12/09 14:50:36 ⚠️ Warning: todo_user_db_11 unreachable: Error 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+2025/12/09 14:50:36 ⚠️ Warning: todo_user_db_12 unreachable: Error 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+2025/12/09 14:50:36 ⚠️ Warning: todo_user_db_13 unreachable: Error 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+2025/12/09 14:50:36 ⚠️ Warning: todo_user_db_14 unreachable: Error 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+2025/12/09 14:50:36 ⚠️ Warning: todo_user_db_15 unreachable: Error 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+2025/12/09 14:50:36 ⚠️ Warning: todo_data_db_0 unreachable: Error 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+2025/12/09 14:50:36 ⚠️ Warning: todo_data_db_1 unreachable: Error 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+2025/12/09 14:50:36 ⚠️ Warning: todo_data_db_2 unreachable: Error 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+2025/12/09 14:50:36 ⚠️ Warning: todo_data_db_3 unreachable: Error 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+2025/12/09 14:50:59 ✅ Sharding Router V2 Initialized
+2025/12/09 14:51:01 ⚠️ Redis connection failed: dial tcp [::1]:6379: connect: connection refused. Caching will be disabled.
+2025/12/09 14:51:02 ⚠️ Failed to create Kafka producer: kafka: client has run out of available brokers to talk to: dial tcp [::1]:9092: connect: connection refused. Media uploads will be disabled.
+2025/12/09 14:51:02 🚀 TodoList App running on :8080
+2025/12/09 14:51:02 ✨ Features: Sharding, Redis Cache, CAPTCHA, Media Upload (Kafka)
+2025/12/09 17:54:05 ✅ Sharding Router V2 Initialized
+2025/12/09 17:54:07 ⚠️ Redis connection failed: dial tcp [::1]:6379: connect: connection refused. Caching will be disabled.
+2025/12/09 17:54:08 ⚠️ Failed to create Kafka producer: kafka: client has run out of available brokers to talk to: dial tcp [::1]:9092: connect: connection refused. Media uploads will be disabled.
+2025/12/09 17:54:08 🚀 TodoList App running on :8080
+2025/12/09 17:54:08 ✨ Features: Sharding, Redis Cache, CAPTCHA, Media Upload (Kafka)
+2025/12/09 17:58:20 ✅ Sharding Router V2 Initialized
+2025/12/09 17:58:22 ⚠️ Redis connection failed: dial tcp [::1]:6379: connect: connection refused. Caching will be disabled.
+2025/12/09 17:58:23 ⚠️ Failed to create Kafka producer: kafka: client has run out of available brokers to talk to: dial tcp [::1]:9092: connect: connection refused. Media uploads will be disabled.
+2025/12/09 17:58:23 🚀 TodoList App running on :8080
+2025/12/09 17:58:23 ✨ Features: Sharding, Redis Cache, CAPTCHA, Media Upload (Kafka)
+2025/12/09 17:59:51 ✅ Sharding Router V2 Initialized
+2025/12/09 17:59:53 ⚠️ Redis connection failed: dial tcp [::1]:6379: connect: connection refused. Caching will be disabled.
+2025/12/09 17:59:54 ⚠️ Failed to create Kafka producer: kafka: client has run out of available brokers to talk to: dial tcp [::1]:9092: connect: connection refused. Media uploads will be disabled.
+2025/12/09 17:59:54 🚀 TodoList App running on :8080
+2025/12/09 17:59:54 ✨ Features: Sharding, Redis Cache, CAPTCHA, Media Upload (Kafka)
+2025/12/09 18:06:52 📝 [Register] Attempting registration for Email: huangdebao_2009@163.com, Password: 123456
+2025/12/09 18:06:52 🗄️ user shard routing: user_id=388994903654404096 -> table=users_0000 db=0xc0000c56c0
+2025/12/09 18:07:08 📝 [Register] Attempting registration for Email: huangdebao_2009@163.com, Password: 123456
+2025/12/09 18:07:08 🗄️ user shard routing: user_id=388994971409190912 -> table=users_0000 db=0xc0000c56c0
+2025/12/09 18:11:19 📝 [Register] Attempting registration for Email: huangdebao_2009@163.com, Password: 115119_hH
+2025/12/09 18:11:19 🗄️ user shard routing: user_id=388996025609752576 -> table=users_0000 db=0xc0000c56c0
+2025/12/09 18:11:19 📧 [MOCK EMAIL] To: huangdebao_2009@163.com | Code: 2065
+2025/12/09 18:21:48 ✅ Sharding Router V2 Initialized
+2025/12/09 18:21:50 ⚠️ Redis connection failed: dial tcp [::1]:6379: connect: connection refused. Caching will be disabled.
+2025/12/09 18:21:51 ⚠️ Failed to create Kafka producer: kafka: client has run out of available brokers to talk to: dial tcp [::1]:9092: connect: connection refused. Media uploads will be disabled.
+2025/12/09 18:21:51 🚀 TodoList App running on :8080
+2025/12/09 18:21:51 ✨ Features: Sharding, Redis Cache, CAPTCHA, Media Upload (Kafka)
+2025/12/09 18:22:22 📝 [Register] Attempting registration for Email: huangdebao_2009@163.com, Password: 123456
+2025/12/09 18:22:22 🗄️ user shard routing: user_id=388998806496219136 -> table=users_0000 db=0xc0001256c0
+2025/12/09 18:22:42 📝 [Register] Attempting registration for Email: huangdebao_2009@163.com, Password: 123456
+2025/12/09 18:22:42 🗄️ user shard routing: user_id=388998888750714880 -> table=users_0000 db=0xc0001256c0
+2025/12/09 18:23:20 📝 [Register] Attempting registration for Email: huangdebao_2009@163.com, Password: 123456
+2025/12/09 18:23:21 🗄️ user shard routing: user_id=388999051003170816 -> table=users_0000 db=0xc0001256c0
+2025/12/09 18:23:47 📝 [Register] Attempting registration for Email: huangdebao_2009@163.com, Password: 123456
+2025/12/09 18:23:47 🗄️ user shard routing: user_id=388999163708313600 -> table=users_0000 db=0xc0001256c0
+2025/12/09 18:25:06 📝 [Register] Attempting registration for Email: huangdebao_2010@163.com, Password: 123456
+2025/12/09 18:25:06 🗄️ user shard routing: user_id=388999495406456832 -> table=users_0000 db=0xc0001256c0
+2025/12/09 18:25:06 📧 [MOCK EMAIL] To: huangdebao_2010@163.com | Code: 5004
+2025/12/09 18:27:22 📝 [Register] Attempting registration for Email: huangdebao_2011@163.com, Password: 123456
+2025/12/09 18:27:22 🗄️ user shard routing: user_id=389000065613697024 -> table=users_0000 db=0xc0001256c0
+2025/12/09 18:27:22 📧 [MOCK EMAIL] To: huangdebao_2011@163.com | Code: 7508
+2025/12/09 18:31:35 📝 [Register] Attempting registration for Email: huangdebao_2013@163.com, Password: 123456
+2025/12/09 18:31:35 🗄️ user shard routing: user_id=389001124172140544 -> table=users_0000 db=0xc0001256c0
+2025/12/09 18:31:35 📧 [MOCK EMAIL] To: huangdebao_2013@163.com | Code: 4314
+2025/12/09 18:35:12 ✅ Sharding Router V2 Initialized
+2025/12/09 18:35:14 ⚠️ Redis connection failed: dial tcp [::1]:6379: connect: connection refused. Caching will be disabled.
+2025/12/09 18:35:15 ⚠️ Failed to create Kafka producer: kafka: client has run out of available brokers to talk to: dial tcp [::1]:9092: connect: connection refused. Media uploads will be disabled.
+2025/12/09 18:35:15 🚀 TodoList App running on :8080
+2025/12/09 18:35:15 ✨ Features: Sharding, Redis Cache, CAPTCHA, Media Upload (Kafka)
+2025/12/09 18:35:39 📝 [Register] Attempting registration for Email: huangdebao_2034@163.com, Password: 123456
+2025/12/09 18:35:39 🗄️ user shard routing: user_id=389002148307931136 -> table=users_0000 db=0xc0001316c0
+2025/12/09 18:35:39 📧 [MOCK EMAIL] To: huangdebao_2034@163.com | Code: 7896
+2025/12/09 18:40:32 ✅ Sharding Router V2 Initialized
+2025/12/09 18:40:34 ⚠️ Redis connection failed: dial tcp [::1]:6379: connect: connection refused. Caching will be disabled.
+2025/12/09 18:40:35 ⚠️ Failed to create Kafka producer: kafka: client has run out of available brokers to talk to: dial tcp [::1]:9092: connect: connection refused. Media uploads will be disabled.
+2025/12/09 18:40:35 🚀 TodoList App running on :8080
+2025/12/09 18:40:35 ✨ Features: Sharding, Redis Cache, CAPTCHA, Media Upload (Kafka)
+2025/12/09 18:47:55 ✅ Sharding Router V2 Initialized
+2025/12/09 18:47:55 ✅ Redis connected successfully
+2025/12/09 18:47:55 ✅ Kafka producer created successfully
+2025/12/09 18:47:55 🚀 TodoList App running on :8080
+2025/12/09 18:47:55 ✨ Features: Sharding, Redis Cache, CAPTCHA, Media Upload (Kafka)
+2025/12/09 19:02:37 ✅ Sharding Router V2 Initialized
+2025/12/09 19:02:37 ✅ Redis connected successfully
+2025/12/09 19:02:37 ✅ Kafka producer created successfully
+2025/12/09 19:02:37 🚀 TodoList App running on :8080
+2025/12/09 19:02:37 ✨ Features: Sharding, Redis Cache, CAPTCHA, Media Upload (Kafka)
+2025/12/09 19:03:15 📝 [Register] Attempting registration for Email: huangdebao_2041@163.com, Password: 123456
+2025/12/09 19:03:15 🧭 [UserRepoV2] EmailIndexLookup cluster=todo_user_db_8 shard=0008 table=user_email_index_0008 sql=SELECT user_id FROM user_email_index_0008 WHERE email = ? args=[huangdebao_2041@163.com]
+2025/12/09 19:03:15 🗄️ user shard routing: user_id=389009092557017088 -> table=users_0000 db=0xc0001b16c0
+2025/12/09 19:03:15 🧭 [UserRepoV2] CreateUser cluster=todo_user_db_0 shard=0000 table=users_0000 sql=INSERT INTO users_0000 (user_id, email, password_hash, verification_code, is_verified) VALUES (?, ?, ?, ?, ?) args=[389009092557017088 huangdebao_2041@163.com *** *** false]
+2025/12/09 19:03:15 🧭 [UserRepoV2] InsertEmailIndex cluster=todo_user_db_8 shard=0008 table=user_email_index_0008 sql=INSERT INTO user_email_index_0008 (email, user_id) VALUES (?, ?) args=[huangdebao_2041@163.com 389009092557017088]
+2025/12/09 19:03:15 📧 [MOCK EMAIL] To: huangdebao_2041@163.com | Code: 1897
+2025/12/09 19:03:23 📝 [Register] Attempting registration for Email: huangdebao_2041@163.com, Password: 123456
+2025/12/09 19:03:23 🧭 [UserRepoV2] EmailIndexLookup cluster=todo_user_db_8 shard=0008 table=user_email_index_0008 sql=SELECT user_id FROM user_email_index_0008 WHERE email = ? args=[huangdebao_2041@163.com]
+2025/12/09 19:03:23 🧭 [UserRepoV2] GetByID cluster=todo_user_db_0 shard=0000 table=users_0000 sql=SELECT user_id, email, password_hash, verification_code, is_verified, created_at FROM users_0000 WHERE user_id = ? args=[389009092557017088]
+2025/12/09 19:03:24 📝 [Register] Attempting registration for Email: huangdebao_2041@163.com, Password: 123456
+2025/12/09 19:03:24 🧭 [UserRepoV2] EmailIndexLookup cluster=todo_user_db_8 shard=0008 table=user_email_index_0008 sql=SELECT user_id FROM user_email_index_0008 WHERE email = ? args=[huangdebao_2041@163.com]
+2025/12/09 19:03:24 🧭 [UserRepoV2] GetByID cluster=todo_user_db_0 shard=0000 table=users_0000 sql=SELECT user_id, email, password_hash, verification_code, is_verified, created_at FROM users_0000 WHERE user_id = ? args=[389009092557017088]
+2025/12/09 19:03:24 📝 [Register] Attempting registration for Email: huangdebao_2041@163.com, Password: 123456
+2025/12/09 19:03:24 🧭 [UserRepoV2] EmailIndexLookup cluster=todo_user_db_8 shard=0008 table=user_email_index_0008 sql=SELECT user_id FROM user_email_index_0008 WHERE email = ? args=[huangdebao_2041@163.com]
+2025/12/09 19:03:24 🧭 [UserRepoV2] GetByID cluster=todo_user_db_0 shard=0000 table=users_0000 sql=SELECT user_id, email, password_hash, verification_code, is_verified, created_at FROM users_0000 WHERE user_id = ? args=[389009092557017088]
+2025/12/09 19:03:24 📝 [Register] Attempting registration for Email: huangdebao_2041@163.com, Password: 123456
+2025/12/09 19:03:24 🧭 [UserRepoV2] EmailIndexLookup cluster=todo_user_db_8 shard=0008 table=user_email_index_0008 sql=SELECT user_id FROM user_email_index_0008 WHERE email = ? args=[huangdebao_2041@163.com]
+2025/12/09 19:03:24 🧭 [UserRepoV2] GetByID cluster=todo_user_db_0 shard=0000 table=users_0000 sql=SELECT user_id, email, password_hash, verification_code, is_verified, created_at FROM users_0000 WHERE user_id = ? args=[389009092557017088]
+2025/12/09 19:03:24 📝 [Register] Attempting registration for Email: huangdebao_2041@163.com, Password: 123456
+2025/12/09 19:03:24 🧭 [UserRepoV2] EmailIndexLookup cluster=todo_user_db_8 shard=0008 table=user_email_index_0008 sql=SELECT user_id FROM user_email_index_0008 WHERE email = ? args=[huangdebao_2041@163.com]
+2025/12/09 19:03:24 🧭 [UserRepoV2] GetByID cluster=todo_user_db_0 shard=0000 table=users_0000 sql=SELECT user_id, email, password_hash, verification_code, is_verified, created_at FROM users_0000 WHERE user_id = ? args=[389009092557017088]
+2025/12/09 19:03:24 📝 [Register] Attempting registration for Email: huangdebao_2041@163.com, Password: 123456
+2025/12/09 19:03:24 🧭 [UserRepoV2] EmailIndexLookup cluster=todo_user_db_8 shard=0008 table=user_email_index_0008 sql=SELECT user_id FROM user_email_index_0008 WHERE email = ? args=[huangdebao_2041@163.com]
+2025/12/09 19:03:24 🧭 [UserRepoV2] GetByID cluster=todo_user_db_0 shard=0000 table=users_0000 sql=SELECT user_id, email, password_hash, verification_code, is_verified, created_at FROM users_0000 WHERE user_id = ? args=[389009092557017088]
+2025/12/09 19:03:25 📝 [Register] Attempting registration for Email: huangdebao_2041@163.com, Password: 123456
+2025/12/09 19:03:25 🧭 [UserRepoV2] EmailIndexLookup cluster=todo_user_db_8 shard=0008 table=user_email_index_0008 sql=SELECT user_id FROM user_email_index_0008 WHERE email = ? args=[huangdebao_2041@163.com]
+2025/12/09 19:03:25 🧭 [UserRepoV2] GetByID cluster=todo_user_db_0 shard=0000 table=users_0000 sql=SELECT user_id, email, password_hash, verification_code, is_verified, created_at FROM users_0000 WHERE user_id = ? args=[389009092557017088]
+2025/12/09 19:03:25 📝 [Register] Attempting registration for Email: huangdebao_2041@163.com, Password: 123456
+2025/12/09 19:03:25 🧭 [UserRepoV2] EmailIndexLookup cluster=todo_user_db_8 shard=0008 table=user_email_index_0008 sql=SELECT user_id FROM user_email_index_0008 WHERE email = ? args=[huangdebao_2041@163.com]
+2025/12/09 19:03:25 🧭 [UserRepoV2] GetByID cluster=todo_user_db_0 shard=0000 table=users_0000 sql=SELECT user_id, email, password_hash, verification_code, is_verified, created_at FROM users_0000 WHERE user_id = ? args=[389009092557017088]
+2025/12/09 19:03:25 📝 [Register] Attempting registration for Email: huangdebao_2041@163.com, Password: 123456
+2025/12/09 19:03:25 🧭 [UserRepoV2] EmailIndexLookup cluster=todo_user_db_8 shard=0008 table=user_email_index_0008 sql=SELECT user_id FROM user_email_index_0008 WHERE email = ? args=[huangdebao_2041@163.com]
+2025/12/09 19:03:25 🧭 [UserRepoV2] GetByID cluster=todo_user_db_0 shard=0000 table=users_0000 sql=SELECT user_id, email, password_hash, verification_code, is_verified, created_at FROM users_0000 WHERE user_id = ? args=[389009092557017088]
+2025/12/09 19:03:25 📝 [Register] Attempting registration for Email: huangdebao_2041@163.com, Password: 123456
+2025/12/09 19:03:25 🧭 [UserRepoV2] EmailIndexLookup cluster=todo_user_db_8 shard=0008 table=user_email_index_0008 sql=SELECT user_id FROM user_email_index_0008 WHERE email = ? args=[huangdebao_2041@163.com]
+2025/12/09 19:03:25 🧭 [UserRepoV2] GetByID cluster=todo_user_db_0 shard=0000 table=users_0000 sql=SELECT user_id, email, password_hash, verification_code, is_verified, created_at FROM users_0000 WHERE user_id = ? args=[389009092557017088]
+2025/12/09 19:03:25 📝 [Register] Attempting registration for Email: huangdebao_2041@163.com, Password: 123456
+2025/12/09 19:03:25 🧭 [UserRepoV2] EmailIndexLookup cluster=todo_user_db_8 shard=0008 table=user_email_index_0008 sql=SELECT user_id FROM user_email_index_0008 WHERE email = ? args=[huangdebao_2041@163.com]
+2025/12/09 19:03:25 🧭 [UserRepoV2] GetByID cluster=todo_user_db_0 shard=0000 table=users_0000 sql=SELECT user_id, email, password_hash, verification_code, is_verified, created_at FROM users_0000 WHERE user_id = ? args=[389009092557017088]
+2025/12/09 19:03:25 📝 [Register] Attempting registration for Email: huangdebao_2041@163.com, Password: 123456
+2025/12/09 19:03:25 🧭 [UserRepoV2] EmailIndexLookup cluster=todo_user_db_8 shard=0008 table=user_email_index_0008 sql=SELECT user_id FROM user_email_index_0008 WHERE email = ? args=[huangdebao_2041@163.com]
+2025/12/09 19:03:25 🧭 [UserRepoV2] GetByID cluster=todo_user_db_0 shard=0000 table=users_0000 sql=SELECT user_id, email, password_hash, verification_code, is_verified, created_at FROM users_0000 WHERE user_id = ? args=[389009092557017088]
+2025/12/09 19:05:47 🧭 [UserRepoV2] EmailIndexLookup cluster=todo_user_db_8 shard=0008 table=user_email_index_0008 sql=SELECT user_id FROM user_email_index_0008 WHERE email = ? args=[huangdebao_2041@163.com]
+2025/12/09 19:05:47 🧭 [UserRepoV2] GetByID cluster=todo_user_db_0 shard=0000 table=users_0000 sql=SELECT user_id, email, password_hash, verification_code, is_verified, created_at FROM users_0000 WHERE user_id = ? args=[389009092557017088]
+2025/12/09 19:05:47 🧭 [UserRepoV2] EmailIndexLookup cluster=todo_user_db_8 shard=0008 table=user_email_index_0008 sql=SELECT user_id FROM user_email_index_0008 WHERE email = ? args=[huangdebao_2041@163.com]
+2025/12/09 19:05:47 🧭 [UserRepoV2] GetByID cluster=todo_user_db_0 shard=0000 table=users_0000 sql=SELECT user_id, email, password_hash, verification_code, is_verified, created_at FROM users_0000 WHERE user_id = ? args=[389009092557017088]
+2025/12/09 19:05:47 🧭 [UserRepoV2] UpdateVerification cluster=todo_user_db_0 shard=0000 table=users_0000 sql=UPDATE users_0000 SET is_verified = ? WHERE user_id = ? args=[true 389009092557017088]
+2025/12/09 19:06:05 🧭 [UserRepoV2] EmailIndexLookup cluster=todo_user_db_8 shard=0008 table=user_email_index_0008 sql=SELECT user_id FROM user_email_index_0008 WHERE email = ? args=[huangdebao_2041@163.com]
+2025/12/09 19:06:05 🧭 [UserRepoV2] GetByID cluster=todo_user_db_0 shard=0000 table=users_0000 sql=SELECT user_id, email, password_hash, verification_code, is_verified, created_at FROM users_0000 WHERE user_id = ? args=[389009092557017088]
+2025/12/09 19:06:05 📭 Cache MISS: user_lists:389009092557017088
+2025/12/09 19:06:05 🧭 [TodoRepoV2] ListIndexQuery cluster=todo_user_db_0 shard=0000 table=user_list_index_0000 sql=SELECT list_id, role FROM user_list_index_0000 WHERE user_id = ? args=[389009092557017088]
+2025/12/09 19:06:10 🎯 Cache HIT: user_lists:389009092557017088
+2025/12/09 19:06:15 🎯 Cache HIT: user_lists:389009092557017088
+2025/12/09 19:06:20 🎯 Cache HIT: user_lists:389009092557017088
+2025/12/09 19:06:22 🧭 [TodoRepoV2] CreateList cluster=todo_data_db_43 shard=0000 table=todo_lists_tab_0000 sql=INSERT INTO todo_lists_tab_0000 (list_id, owner_id, title) VALUES (?, ?, ?) args=[389009879580418048 389009092557017088 huangdebao_2041_list1]
+2025/12/09 19:06:22 🎯 Cache HIT: user_lists:389009092557017088
+2025/12/09 19:06:25 🎯 Cache HIT: user_lists:389009092557017088
+2025/12/09 19:06:30 🎯 Cache HIT: user_lists:389009092557017088
+2025/12/09 19:06:35 🎯 Cache HIT: user_lists:389009092557017088
+2025/12/09 19:06:36 🎯 Cache HIT: user_lists:389009092557017088
+2025/12/09 19:06:38 🎯 Cache HIT: user_lists:389009092557017088
+2025/12/09 19:06:38 🎯 Cache HIT: user_lists:389009092557017088
+2025/12/09 19:06:43 🎯 Cache HIT: user_lists:389009092557017088
+2025/12/09 19:06:48 🎯 Cache HIT: user_lists:389009092557017088
+2025/12/09 19:06:53 🎯 Cache HIT: user_lists:389009092557017088
+2025/12/09 19:06:58 🎯 Cache HIT: user_lists:389009092557017088
+2025/12/09 19:07:03 🎯 Cache HIT: user_lists:389009092557017088
+2025/12/09 19:07:08 🎯 Cache HIT: user_lists:389009092557017088
+2025/12/09 19:07:13 🎯 Cache HIT: user_lists:389009092557017088
+2025/12/09 19:07:18 🎯 Cache HIT: user_lists:389009092557017088
+2025/12/09 19:07:23 🎯 Cache HIT: user_lists:389009092557017088
+2025/12/09 19:07:28 🎯 Cache HIT: user_lists:389009092557017088
+2025/12/09 19:07:33 🎯 Cache HIT: user_lists:389009092557017088
+2025/12/09 19:07:38 🎯 Cache HIT: user_lists:389009092557017088
+2025/12/09 19:07:43 🎯 Cache HIT: user_lists:389009092557017088
+2025/12/09 19:07:48 🎯 Cache HIT: user_lists:389009092557017088
+2025/12/09 19:07:53 🎯 Cache HIT: user_lists:389009092557017088
+2025/12/09 19:07:58 🎯 Cache HIT: user_lists:389009092557017088
+2025/12/09 19:08:03 🎯 Cache HIT: user_lists:389009092557017088
+2025/12/09 19:08:08 🎯 Cache HIT: user_lists:389009092557017088
+2025/12/09 19:08:13 🎯 Cache HIT: user_lists:389009092557017088
+2025/12/09 19:08:18 🎯 Cache HIT: user_lists:389009092557017088
+2025/12/09 19:08:23 🎯 Cache HIT: user_lists:389009092557017088
+2025/12/09 19:08:28 🎯 Cache HIT: user_lists:389009092557017088
+2025/12/09 19:08:33 🎯 Cache HIT: user_lists:389009092557017088
+2025/12/09 19:08:38 🎯 Cache HIT: user_lists:389009092557017088
+2025/12/09 19:08:43 🎯 Cache HIT: user_lists:389009092557017088
+2025/12/09 19:08:48 🎯 Cache HIT: user_lists:389009092557017088
+2025/12/09 19:08:53 🎯 Cache HIT: user_lists:389009092557017088
+2025/12/09 19:08:58 🎯 Cache HIT: user_lists:389009092557017088
+2025/12/09 19:09:03 🎯 Cache HIT: user_lists:389009092557017088
+2025/12/09 19:09:08 🎯 Cache HIT: user_lists:389009092557017088
+2025/12/09 19:09:13 🎯 Cache HIT: user_lists:389009092557017088
+2025/12/09 19:09:18 🎯 Cache HIT: user_lists:389009092557017088
+2025/12/09 19:09:23 🎯 Cache HIT: user_lists:389009092557017088
+2025/12/09 19:09:28 🎯 Cache HIT: user_lists:389009092557017088
+2025/12/09 19:09:33 🎯 Cache HIT: user_lists:389009092557017088
+2025/12/09 19:09:38 🎯 Cache HIT: user_lists:389009092557017088
+2025/12/09 19:09:43 🎯 Cache HIT: user_lists:389009092557017088
+2025/12/09 19:09:48 🎯 Cache HIT: user_lists:389009092557017088
+2025/12/09 19:09:53 🎯 Cache HIT: user_lists:389009092557017088
+2025/12/09 19:09:58 🎯 Cache HIT: user_lists:389009092557017088
+2025/12/09 19:10:03 🎯 Cache HIT: user_lists:389009092557017088
+2025/12/09 19:10:08 🎯 Cache HIT: user_lists:389009092557017088
+2025/12/09 19:10:13 🎯 Cache HIT: user_lists:389009092557017088
+2025/12/09 19:10:18 🎯 Cache HIT: user_lists:389009092557017088
+2025/12/09 19:10:23 🎯 Cache HIT: user_lists:389009092557017088
+2025/12/09 19:10:28 🎯 Cache HIT: user_lists:389009092557017088
+2025/12/09 19:10:33 🎯 Cache HIT: user_lists:389009092557017088
+2025/12/09 19:10:38 🎯 Cache HIT: user_lists:389009092557017088
+2025/12/09 19:10:43 🎯 Cache HIT: user_lists:389009092557017088
+2025/12/09 19:10:48 🎯 Cache HIT: user_lists:389009092557017088
+2025/12/09 19:10:53 🎯 Cache HIT: user_lists:389009092557017088
+2025/12/09 19:10:58 🎯 Cache HIT: user_lists:389009092557017088
+2025/12/09 19:11:03 🎯 Cache HIT: user_lists:389009092557017088
+2025/12/09 19:11:08 📭 Cache MISS: user_lists:389009092557017088
+2025/12/09 19:11:08 🧭 [TodoRepoV2] ListIndexQuery cluster=todo_user_db_0 shard=0000 table=user_list_index_0000 sql=SELECT list_id, role FROM user_list_index_0000 WHERE user_id = ? args=[389009092557017088]
+2025/12/09 19:11:13 🎯 Cache HIT: user_lists:389009092557017088
+2025/12/09 19:11:18 🎯 Cache HIT: user_lists:389009092557017088
+2025/12/09 19:11:23 🎯 Cache HIT: user_lists:389009092557017088
+2025/12/09 19:11:28 🎯 Cache HIT: user_lists:389009092557017088
+2025/12/09 19:11:33 🎯 Cache HIT: user_lists:389009092557017088
+2025/12/09 19:11:38 🎯 Cache HIT: user_lists:389009092557017088
+2025/12/09 19:11:43 🎯 Cache HIT: user_lists:389009092557017088
+2025/12/09 19:11:48 🎯 Cache HIT: user_lists:389009092557017088
+2025/12/09 19:11:53 🎯 Cache HIT: user_lists:389009092557017088
+2025/12/09 19:11:58 🎯 Cache HIT: user_lists:389009092557017088
+2025/12/09 19:12:03 🎯 Cache HIT: user_lists:389009092557017088
+2025/12/09 19:12:08 🎯 Cache HIT: user_lists:389009092557017088
+2025/12/09 19:12:13 🎯 Cache HIT: user_lists:389009092557017088
+2025/12/09 19:12:18 🎯 Cache HIT: user_lists:389009092557017088
+2025/12/09 19:12:23 🎯 Cache HIT: user_lists:389009092557017088
+2025/12/09 19:12:28 🎯 Cache HIT: user_lists:389009092557017088
+2025/12/09 19:12:33 🎯 Cache HIT: user_lists:389009092557017088
+2025/12/09 19:12:38 🎯 Cache HIT: user_lists:389009092557017088
+2025/12/09 19:12:43 🎯 Cache HIT: user_lists:389009092557017088
+2025/12/09 19:12:48 🎯 Cache HIT: user_lists:389009092557017088
+2025/12/09 19:12:53 🎯 Cache HIT: user_lists:389009092557017088
+2025/12/09 19:12:58 🎯 Cache HIT: user_lists:389009092557017088
+2025/12/09 19:13:03 🎯 Cache HIT: user_lists:389009092557017088
+2025/12/09 19:13:08 🎯 Cache HIT: user_lists:389009092557017088
+2025/12/09 19:13:13 🎯 Cache HIT: user_lists:389009092557017088
+2025/12/09 19:13:18 🎯 Cache HIT: user_lists:389009092557017088
+2025/12/09 19:13:23 🎯 Cache HIT: user_lists:389009092557017088
+2025/12/09 19:13:29 🎯 Cache HIT: user_lists:389009092557017088
+2025/12/09 19:13:33 🎯 Cache HIT: user_lists:389009092557017088
+2025/12/09 19:13:38 🎯 Cache HIT: user_lists:389009092557017088
+2025/12/09 19:13:43 🎯 Cache HIT: user_lists:389009092557017088
+2025/12/09 19:13:48 🎯 Cache HIT: user_lists:389009092557017088
+2025/12/09 19:13:53 🎯 Cache HIT: user_lists:389009092557017088
+2025/12/09 19:14:16 🎯 Cache HIT: user_lists:389009092557017088
+2025/12/09 19:15:17 🎯 Cache HIT: user_lists:389009092557017088
+2025/12/09 19:16:16 📭 Cache MISS: user_lists:389009092557017088
+2025/12/09 19:16:16 🧭 [TodoRepoV2] ListIndexQuery cluster=todo_user_db_0 shard=0000 table=user_list_index_0000 sql=SELECT list_id, role FROM user_list_index_0000 WHERE user_id = ? args=[389009092557017088]
+2025/12/09 19:17:16 🎯 Cache HIT: user_lists:389009092557017088
+2025/12/09 19:18:16 🎯 Cache HIT: user_lists:389009092557017088
+2025/12/09 19:19:16 🎯 Cache HIT: user_lists:389009092557017088
+2025/12/09 19:20:16 🎯 Cache HIT: user_lists:389009092557017088
+2025/12/09 19:21:16 📭 Cache MISS: user_lists:389009092557017088
+2025/12/09 19:21:16 🧭 [TodoRepoV2] ListIndexQuery cluster=todo_user_db_0 shard=0000 table=user_list_index_0000 sql=SELECT list_id, role FROM user_list_index_0000 WHERE user_id = ? args=[389009092557017088]
+2025/12/09 19:22:16 🎯 Cache HIT: user_lists:389009092557017088
+2025/12/09 19:23:16 🎯 Cache HIT: user_lists:389009092557017088
+2025/12/09 19:24:16 🎯 Cache HIT: user_lists:389009092557017088
+2025/12/09 19:25:16 🎯 Cache HIT: user_lists:389009092557017088
+2025/12/09 19:26:16 📭 Cache MISS: user_lists:389009092557017088
+2025/12/09 19:26:16 🧭 [TodoRepoV2] ListIndexQuery cluster=todo_user_db_0 shard=0000 table=user_list_index_0000 sql=SELECT list_id, role FROM user_list_index_0000 WHERE user_id = ? args=[389009092557017088]
+2025/12/09 19:27:16 🎯 Cache HIT: user_lists:389009092557017088
+2025/12/09 19:28:16 🎯 Cache HIT: user_lists:389009092557017088
+2025/12/09 19:29:16 🎯 Cache HIT: user_lists:389009092557017088
+2025/12/09 19:30:16 🎯 Cache HIT: user_lists:389009092557017088
+2025/12/09 19:31:16 🎯 Cache HIT: user_lists:389009092557017088
+2025/12/09 19:32:16 📭 Cache MISS: user_lists:389009092557017088
+2025/12/09 19:32:16 🧭 [TodoRepoV2] ListIndexQuery cluster=todo_user_db_0 shard=0000 table=user_list_index_0000 sql=SELECT list_id, role FROM user_list_index_0000 WHERE user_id = ? args=[389009092557017088]
+2025/12/09 19:33:16 🎯 Cache HIT: user_lists:389009092557017088
+2025/12/09 19:34:16 🎯 Cache HIT: user_lists:389009092557017088
+2025/12/09 19:35:16 🎯 Cache HIT: user_lists:389009092557017088
+2025/12/09 19:36:16 🎯 Cache HIT: user_lists:389009092557017088
+2025/12/09 19:37:17 📭 Cache MISS: user_lists:389009092557017088
+2025/12/09 19:37:17 🧭 [TodoRepoV2] ListIndexQuery cluster=todo_user_db_0 shard=0000 table=user_list_index_0000 sql=SELECT list_id, role FROM user_list_index_0000 WHERE user_id = ? args=[389009092557017088]
+2025/12/09 19:38:16 🎯 Cache HIT: user_lists:389009092557017088
+2025/12/09 19:39:16 🎯 Cache HIT: user_lists:389009092557017088
+2025/12/09 19:40:16 🎯 Cache HIT: user_lists:389009092557017088
+2025/12/09 19:41:16 🎯 Cache HIT: user_lists:389009092557017088
+2025/12/09 19:42:16 🎯 Cache HIT: user_lists:389009092557017088
+2025/12/09 19:43:16 📭 Cache MISS: user_lists:389009092557017088
+2025/12/09 19:43:16 🧭 [TodoRepoV2] ListIndexQuery cluster=todo_user_db_0 shard=0000 table=user_list_index_0000 sql=SELECT list_id, role FROM user_list_index_0000 WHERE user_id = ? args=[389009092557017088]
+2025/12/09 19:44:16 🎯 Cache HIT: user_lists:389009092557017088
+2025/12/09 19:45:16 🎯 Cache HIT: user_lists:389009092557017088
+2025/12/09 19:46:16 🎯 Cache HIT: user_lists:389009092557017088
+2025/12/09 19:47:19 🎯 Cache HIT: user_lists:389009092557017088
+2025/12/09 19:48:24 📭 Cache MISS: user_lists:389009092557017088
+2025/12/09 19:48:24 🧭 [TodoRepoV2] ListIndexQuery cluster=todo_user_db_0 shard=0000 table=user_list_index_0000 sql=SELECT list_id, role FROM user_list_index_0000 WHERE user_id = ? args=[389009092557017088]
+2025/12/09 19:49:29 🎯 Cache HIT: user_lists:389009092557017088
+2025/12/09 19:50:32 🎯 Cache HIT: user_lists:389009092557017088
+2025/12/09 19:51:36 🎯 Cache HIT: user_lists:389009092557017088
+2025/12/09 19:52:41 🎯 Cache HIT: user_lists:389009092557017088
+2025/12/09 19:53:47 📭 Cache MISS: user_lists:389009092557017088
+2025/12/09 19:53:47 🧭 [TodoRepoV2] ListIndexQuery cluster=todo_user_db_0 shard=0000 table=user_list_index_0000 sql=SELECT list_id, role FROM user_list_index_0000 WHERE user_id = ? args=[389009092557017088]
+2025/12/09 19:54:52 🎯 Cache HIT: user_lists:389009092557017088
+2025/12/09 19:55:58 🎯 Cache HIT: user_lists:389009092557017088
+2025/12/09 19:57:02 🎯 Cache HIT: user_lists:389009092557017088
+2025/12/09 19:58:08 🎯 Cache HIT: user_lists:389009092557017088
+2025/12/09 19:59:14 📭 Cache MISS: user_lists:389009092557017088
+2025/12/09 19:59:14 🧭 [TodoRepoV2] ListIndexQuery cluster=todo_user_db_0 shard=0000 table=user_list_index_0000 sql=SELECT list_id, role FROM user_list_index_0000 WHERE user_id = ? args=[389009092557017088]
+2025/12/09 20:00:18 🎯 Cache HIT: user_lists:389009092557017088
+2025/12/09 20:01:22 🎯 Cache HIT: user_lists:389009092557017088
+2025/12/09 20:02:29 🎯 Cache HIT: user_lists:389009092557017088
+2025/12/09 20:03:33 🎯 Cache HIT: user_lists:389009092557017088
+2025/12/09 20:04:36 📭 Cache MISS: user_lists:389009092557017088
+2025/12/09 20:04:36 🧭 [TodoRepoV2] ListIndexQuery cluster=todo_user_db_0 shard=0000 table=user_list_index_0000 sql=SELECT list_id, role FROM user_list_index_0000 WHERE user_id = ? args=[389009092557017088]
+2025/12/09 20:05:41 🎯 Cache HIT: user_lists:389009092557017088
+2025/12/09 20:06:46 🎯 Cache HIT: user_lists:389009092557017088
+2025/12/09 20:07:52 🎯 Cache HIT: user_lists:389009092557017088
+2025/12/09 20:09:00 🎯 Cache HIT: user_lists:389009092557017088
+2025/12/09 20:10:03 📭 Cache MISS: user_lists:389009092557017088
+2025/12/09 20:10:03 🧭 [TodoRepoV2] ListIndexQuery cluster=todo_user_db_0 shard=0000 table=user_list_index_0000 sql=SELECT list_id, role FROM user_list_index_0000 WHERE user_id = ? args=[389009092557017088]
+2025/12/09 20:11:08 🎯 Cache HIT: user_lists:389009092557017088
+2025/12/09 20:12:12 🎯 Cache HIT: user_lists:389009092557017088
+2025/12/09 20:13:19 🎯 Cache HIT: user_lists:389009092557017088
+2025/12/09 20:14:23 🎯 Cache HIT: user_lists:389009092557017088
+2025/12/09 20:15:29 📭 Cache MISS: user_lists:389009092557017088
+2025/12/09 20:15:29 🧭 [TodoRepoV2] ListIndexQuery cluster=todo_user_db_0 shard=0000 table=user_list_index_0000 sql=SELECT list_id, role FROM user_list_index_0000 WHERE user_id = ? args=[389009092557017088]
+2025/12/09 20:16:29 🎯 Cache HIT: user_lists:389009092557017088
+2025/12/09 20:17:29 🎯 Cache HIT: user_lists:389009092557017088
+2025/12/09 20:18:29 🎯 Cache HIT: user_lists:389009092557017088
+2025/12/09 20:19:29 🎯 Cache HIT: user_lists:389009092557017088
+2025/12/09 20:20:29 🎯 Cache HIT: user_lists:389009092557017088
+2025/12/09 20:21:29 📭 Cache MISS: user_lists:389009092557017088
+2025/12/09 20:21:29 🧭 [TodoRepoV2] ListIndexQuery cluster=todo_user_db_0 shard=0000 table=user_list_index_0000 sql=SELECT list_id, role FROM user_list_index_0000 WHERE user_id = ? args=[389009092557017088]
+2025/12/09 20:22:29 🎯 Cache HIT: user_lists:389009092557017088
+2025/12/09 20:23:29 🎯 Cache HIT: user_lists:389009092557017088
+2025/12/09 20:24:29 🎯 Cache HIT: user_lists:389009092557017088
+2025/12/09 20:25:29 🎯 Cache HIT: user_lists:389009092557017088
+2025/12/09 20:26:29 🎯 Cache HIT: user_lists:389009092557017088
+2025/12/09 20:27:29 📭 Cache MISS: user_lists:389009092557017088
+2025/12/09 20:27:29 🧭 [TodoRepoV2] ListIndexQuery cluster=todo_user_db_0 shard=0000 table=user_list_index_0000 sql=SELECT list_id, role FROM user_list_index_0000 WHERE user_id = ? args=[389009092557017088]
+2025/12/09 20:28:29 📭 Cache MISS: user_lists:389009092557017088
+2025/12/09 20:28:29 🧭 [TodoRepoV2] ListIndexQuery cluster=todo_user_db_0 shard=0000 table=user_list_index_0000 sql=SELECT list_id, role FROM user_list_index_0000 WHERE user_id = ? args=[389009092557017088]
+2025/12/09 20:29:29 📭 Cache MISS: user_lists:389009092557017088
+2025/12/09 20:29:29 🧭 [TodoRepoV2] ListIndexQuery cluster=todo_user_db_0 shard=0000 table=user_list_index_0000 sql=SELECT list_id, role FROM user_list_index_0000 WHERE user_id = ? args=[389009092557017088]
+2025/12/09 20:30:29 📭 Cache MISS: user_lists:389009092557017088
+2025/12/09 20:30:29 🧭 [TodoRepoV2] ListIndexQuery cluster=todo_user_db_0 shard=0000 table=user_list_index_0000 sql=SELECT list_id, role FROM user_list_index_0000 WHERE user_id = ? args=[389009092557017088]
+2025/12/09 20:30:30 🎯 Cache HIT: user_lists:389009092557017088
+2025/12/09 20:30:36 🎯 Cache HIT: user_lists:389009092557017088
+2025/12/09 20:30:41 🎯 Cache HIT: user_lists:389009092557017088
+2025/12/09 20:30:46 🎯 Cache HIT: user_lists:389009092557017088
+2025/12/09 20:30:51 🎯 Cache HIT: user_lists:389009092557017088
+2025/12/09 20:30:56 🎯 Cache HIT: user_lists:389009092557017088
+2025/12/09 20:31:01 🎯 Cache HIT: user_lists:389009092557017088
+2025/12/09 20:31:06 🎯 Cache HIT: user_lists:389009092557017088
+2025/12/09 20:31:11 🎯 Cache HIT: user_lists:389009092557017088
+2025/12/09 20:31:16 🎯 Cache HIT: user_lists:389009092557017088
+2025/12/09 20:31:21 🎯 Cache HIT: user_lists:389009092557017088
+2025/12/09 20:31:26 🎯 Cache HIT: user_lists:389009092557017088
+2025/12/09 20:31:31 🎯 Cache HIT: user_lists:389009092557017088
+2025/12/09 20:32:21 ✅ Sharding Router V2 Initialized
+2025/12/09 20:32:21 ✅ Redis connected successfully
+2025/12/09 20:32:21 ✅ Kafka producer created successfully
+2025/12/09 20:32:21 🚀 TodoList App running on :8080
+2025/12/09 20:32:21 ✨ Features: Sharding, Redis Cache, CAPTCHA, Media Upload (Kafka)
+2025/12/09 20:32:29 🎯 Cache HIT: user_lists:389009092557017088
+2025/12/09 20:32:40 🎯 Cache HIT: user_lists:389009092557017088
+2025/12/09 20:32:42 🎯 Cache HIT: user_lists:389009092557017088
+2025/12/09 20:32:43 🎯 Cache HIT: user_lists:389009092557017088
+2025/12/09 20:32:43 🎯 Cache HIT: user_lists:389009092557017088
+2025/12/09 20:32:43 🎯 Cache HIT: user_lists:389009092557017088
+2025/12/09 20:32:43 🎯 Cache HIT: user_lists:389009092557017088
+2025/12/09 20:32:44 🎯 Cache HIT: user_lists:389009092557017088
+2025/12/09 20:32:55 📝 [Register] Attempting registration for Email: huangdebao_2009@163.com, Password: 123456
+2025/12/09 20:32:55 🧭 [UserRepoV2] EmailIndexLookup cluster=todo_user_db_7 shard=0039 table=user_email_index_0039 sql=SELECT user_id FROM user_email_index_0039 WHERE email = ? args=[huangdebao_2009@163.com]
+2025/12/09 20:32:55 🗄️ user shard routing: user_id=389031660848549888 -> table=users_0058 db=0xc0000c16c0
+2025/12/09 20:32:55 🧭 [UserRepoV2] CreateUser cluster=todo_user_db_0 shard=0058 table=users_0058 sql=INSERT INTO users_0058 (user_id, email, password_hash, verification_code, is_verified) VALUES (?, ?, ?, ?, ?) args=[389031660848549888 huangdebao_2009@163.com *** *** false]
+2025/12/09 20:32:55 🧭 [UserRepoV2] InsertEmailIndex cluster=todo_user_db_7 shard=0039 table=user_email_index_0039 sql=INSERT INTO user_email_index_0039 (email, user_id) VALUES (?, ?) args=[huangdebao_2009@163.com 389031660848549888]
+2025/12/09 20:32:55 📧 [MOCK EMAIL] To: huangdebao_2009@163.com | Code: 5368
+2025/12/09 20:33:01 🧭 [UserRepoV2] EmailIndexLookup cluster=todo_user_db_7 shard=0039 table=user_email_index_0039 sql=SELECT user_id FROM user_email_index_0039 WHERE email = ? args=[huangdebao_2009@163.com]
+2025/12/09 20:33:01 🧭 [UserRepoV2] GetByID cluster=todo_user_db_0 shard=0058 table=users_0058 sql=SELECT user_id, email, password_hash, verification_code, is_verified, created_at FROM users_0058 WHERE user_id = ? args=[389031660848549888]
+2025/12/09 20:33:01 🧭 [UserRepoV2] EmailIndexLookup cluster=todo_user_db_7 shard=0039 table=user_email_index_0039 sql=SELECT user_id FROM user_email_index_0039 WHERE email = ? args=[huangdebao_2009@163.com]
+2025/12/09 20:33:01 🧭 [UserRepoV2] GetByID cluster=todo_user_db_0 shard=0058 table=users_0058 sql=SELECT user_id, email, password_hash, verification_code, is_verified, created_at FROM users_0058 WHERE user_id = ? args=[389031660848549888]
+2025/12/09 20:33:01 🧭 [UserRepoV2] UpdateVerification cluster=todo_user_db_0 shard=0058 table=users_0058 sql=UPDATE users_0058 SET is_verified = ? WHERE user_id = ? args=[true 389031660848549888]
+2025/12/09 20:33:12 🧭 [UserRepoV2] EmailIndexLookup cluster=todo_user_db_7 shard=0039 table=user_email_index_0039 sql=SELECT user_id FROM user_email_index_0039 WHERE email = ? args=[huangdebao_2009@163.com]
+2025/12/09 20:33:12 🧭 [UserRepoV2] GetByID cluster=todo_user_db_0 shard=0058 table=users_0058 sql=SELECT user_id, email, password_hash, verification_code, is_verified, created_at FROM users_0058 WHERE user_id = ? args=[389031660848549888]
+2025/12/09 20:33:12 📭 Cache MISS: user_lists:389031660848549888
+2025/12/09 20:33:12 🧭 [TodoRepoV2] ListIndexQuery cluster=todo_user_db_0 shard=0058 table=user_list_index_0058 sql=SELECT list_id, role FROM user_list_index_0058 WHERE user_id = ? args=[389031660848549888]
+2025/12/09 20:33:17 🎯 Cache HIT: user_lists:389031660848549888
+2025/12/09 20:33:22 🎯 Cache HIT: user_lists:389031660848549888
+2025/12/09 20:33:23 🧭 [TodoRepoV2] CreateList cluster=todo_data_db_44 shard=0060 table=todo_lists_tab_0060 sql=INSERT INTO todo_lists_tab_0060 (list_id, owner_id, title) VALUES (?, ?, ?) args=[389031776439377920 389031660848549888 huangdebao_2009_list1]
+2025/12/09 20:33:23 🗄️ list insert success: list_id=389031776439377920 owner_id=389031660848549888 table=todo_lists_tab_0060 suffix=60
+2025/12/09 20:33:23 🧭 [TodoRepoV2] CreateListIndex cluster=todo_user_db_0 shard=0058 table=user_list_index_0058 sql=INSERT INTO user_list_index_0058 (user_id, list_id, role) VALUES (?, ?, ?) args=[389031660848549888 389031776439377920 OWNER]
+2025/12/09 20:33:23 ✅ index insert success: list_id=389031776439377920 owner_id=389031660848549888 idxTable=user_list_index_0058
+2025/12/09 20:33:23 📭 Cache MISS: user_lists:389031660848549888
+2025/12/09 20:33:23 🧭 [TodoRepoV2] ListIndexQuery cluster=todo_user_db_0 shard=0058 table=user_list_index_0058 sql=SELECT list_id, role FROM user_list_index_0058 WHERE user_id = ? args=[389031660848549888]
+2025/12/09 20:33:23 🧭 [TodoRepoV2] FetchList cluster=todo_data_db_44 shard=0060 table=todo_lists_tab_0060 sql=SELECT list_id, title, owner_id FROM todo_lists_tab_0060 WHERE list_id = ? args=[389031776439377920]
+2025/12/09 20:33:23 📭 Cache MISS: items:389031776439377900
+2025/12/09 20:33:23 🧭 [TodoRepoV2] GetItemsByListID cluster=todo_data_db_3 shard=0045 table=todo_items_tab_0045 sql=
+		SELECT item_id, list_id, content, name, description, status, priority, due_date, tags, is_done, created_at, updated_at
+		FROM todo_items_tab_0045 
+		WHERE list_id = ?
+		ORDER BY created_at DESC
+	 args=[389031776439377900]
+2025/12/09 20:33:27 🎯 Cache HIT: user_lists:389031660848549888
+2025/12/09 20:33:27 🎯 Cache HIT: items:389031776439377900
+2025/12/09 20:33:32 🎯 Cache HIT: user_lists:389031660848549888
+2025/12/09 20:33:32 🎯 Cache HIT: items:389031776439377900
+2025/12/09 20:33:37 🎯 Cache HIT: user_lists:389031660848549888
+2025/12/09 20:33:37 🎯 Cache HIT: items:389031776439377900
+2025/12/09 20:33:41 🎯 Cache HIT: items:389031776439377900
+2025/12/09 20:33:42 🎯 Cache HIT: user_lists:389031660848549888
+2025/12/09 20:33:42 🎯 Cache HIT: items:389031776439377900
+2025/12/09 20:33:47 🎯 Cache HIT: user_lists:389031660848549888
+2025/12/09 20:33:47 🎯 Cache HIT: items:389031776439377900
+2025/12/09 20:33:52 🎯 Cache HIT: user_lists:389031660848549888
+2025/12/09 20:33:52 🎯 Cache HIT: items:389031776439377900
+2025/12/09 20:33:57 🎯 Cache HIT: user_lists:389031660848549888
+2025/12/09 20:33:57 🎯 Cache HIT: items:389031776439377900
+2025/12/09 20:34:02 🎯 Cache HIT: user_lists:389031660848549888
+2025/12/09 20:34:02 🎯 Cache HIT: items:389031776439377900
+2025/12/09 20:34:07 🎯 Cache HIT: user_lists:389031660848549888
+2025/12/09 20:34:07 🎯 Cache HIT: items:389031776439377900
+2025/12/09 20:34:10 🎯 Cache HIT: items:389031776439377900
+2025/12/09 20:34:12 🎯 Cache HIT: user_lists:389031660848549888
+2025/12/09 20:34:12 🎯 Cache HIT: items:389031776439377900
+2025/12/09 20:34:17 🎯 Cache HIT: user_lists:389031660848549888
+2025/12/09 20:34:17 🎯 Cache HIT: items:389031776439377900
+2025/12/09 20:34:17 🎯 Cache HIT: user_lists:389031660848549888
+2025/12/09 20:34:17 🎯 Cache HIT: items:389031776439377900
+2025/12/09 20:34:22 🎯 Cache HIT: user_lists:389031660848549888
+2025/12/09 20:34:22 🎯 Cache HIT: items:389031776439377900
+2025/12/09 20:34:27 🎯 Cache HIT: user_lists:389031660848549888
+2025/12/09 20:34:27 🎯 Cache HIT: items:389031776439377900
+2025/12/09 20:34:32 🎯 Cache HIT: user_lists:389031660848549888
+2025/12/09 20:34:32 🎯 Cache HIT: items:389031776439377900
+2025/12/09 20:34:37 🎯 Cache HIT: user_lists:389031660848549888
+2025/12/09 20:34:37 🎯 Cache HIT: items:389031776439377900
+2025/12/09 20:34:42 🎯 Cache HIT: user_lists:389031660848549888
+2025/12/09 20:34:42 🎯 Cache HIT: items:389031776439377900
+2025/12/09 20:34:47 🎯 Cache HIT: user_lists:389031660848549888
+2025/12/09 20:34:47 🎯 Cache HIT: items:389031776439377900
+2025/12/09 20:34:52 🎯 Cache HIT: user_lists:389031660848549888
+2025/12/09 20:34:52 🎯 Cache HIT: items:389031776439377900
+2025/12/09 20:34:57 🎯 Cache HIT: user_lists:389031660848549888
+2025/12/09 20:34:57 🎯 Cache HIT: items:389031776439377900
+2025/12/09 20:35:02 🎯 Cache HIT: user_lists:389031660848549888
+2025/12/09 20:35:02 🎯 Cache HIT: items:389031776439377900
+2025/12/09 20:35:07 🎯 Cache HIT: user_lists:389031660848549888
+2025/12/09 20:35:07 🎯 Cache HIT: items:389031776439377900
+2025/12/09 20:35:12 🎯 Cache HIT: user_lists:389031660848549888
+2025/12/09 20:35:12 🎯 Cache HIT: items:389031776439377900
+2025/12/09 20:35:17 🎯 Cache HIT: user_lists:389031660848549888
+2025/12/09 20:35:17 🎯 Cache HIT: items:389031776439377900
+2025/12/09 20:35:22 🎯 Cache HIT: user_lists:389031660848549888
+2025/12/09 20:35:22 🎯 Cache HIT: items:389031776439377900
+2025/12/09 20:35:27 🎯 Cache HIT: user_lists:389031660848549888
+2025/12/09 20:35:27 🎯 Cache HIT: items:389031776439377900
+2025/12/09 20:35:32 🎯 Cache HIT: user_lists:389031660848549888
+2025/12/09 20:35:32 🎯 Cache HIT: items:389031776439377900
+2025/12/09 20:35:37 🎯 Cache HIT: user_lists:389031660848549888
+2025/12/09 20:35:37 🎯 Cache HIT: items:389031776439377900
+2025/12/09 20:35:42 🎯 Cache HIT: user_lists:389031660848549888
+2025/12/09 20:35:42 🎯 Cache HIT: items:389031776439377900
+2025/12/09 20:35:47 🎯 Cache HIT: user_lists:389031660848549888
+2025/12/09 20:35:47 🎯 Cache HIT: items:389031776439377900
+2025/12/09 20:35:52 🎯 Cache HIT: user_lists:389031660848549888
+2025/12/09 20:35:52 🎯 Cache HIT: items:389031776439377900
+2025/12/09 20:35:57 🎯 Cache HIT: user_lists:389031660848549888
+2025/12/09 20:35:57 🎯 Cache HIT: items:389031776439377900
+2025/12/09 20:36:01 🎯 Cache HIT: items:389031776439377900
+2025/12/09 20:36:02 🎯 Cache HIT: user_lists:389031660848549888
+2025/12/09 20:36:02 🎯 Cache HIT: items:389031776439377900
+2025/12/09 20:36:07 🎯 Cache HIT: user_lists:389031660848549888
+2025/12/09 20:36:07 🎯 Cache HIT: items:389031776439377900
+2025/12/09 20:36:12 🎯 Cache HIT: user_lists:389031660848549888
+2025/12/09 20:36:12 🎯 Cache HIT: items:389031776439377900
+2025/12/09 20:36:17 🎯 Cache HIT: user_lists:389031660848549888
+2025/12/09 20:36:17 🎯 Cache HIT: items:389031776439377900
+2025/12/09 20:36:22 🎯 Cache HIT: user_lists:389031660848549888
+2025/12/09 20:36:22 🎯 Cache HIT: items:389031776439377900
+2025/12/09 20:36:27 🎯 Cache HIT: user_lists:389031660848549888
+2025/12/09 20:36:27 🎯 Cache HIT: items:389031776439377900
+2025/12/09 20:36:32 🎯 Cache HIT: user_lists:389031660848549888
+2025/12/09 20:36:32 🎯 Cache HIT: items:389031776439377900
+2025/12/09 20:36:37 🎯 Cache HIT: user_lists:389031660848549888
+2025/12/09 20:36:37 🎯 Cache HIT: items:389031776439377900
+2025/12/09 20:36:42 🎯 Cache HIT: user_lists:389031660848549888
+2025/12/09 20:36:42 🎯 Cache HIT: items:389031776439377900
+2025/12/09 20:36:47 🎯 Cache HIT: user_lists:389031660848549888
+2025/12/09 20:36:47 🎯 Cache HIT: items:389031776439377900
+2025/12/09 20:36:52 🎯 Cache HIT: user_lists:389031660848549888
+2025/12/09 20:36:52 🎯 Cache HIT: items:389031776439377900
+2025/12/09 20:36:57 🎯 Cache HIT: user_lists:389031660848549888
+2025/12/09 20:36:57 🎯 Cache HIT: items:389031776439377900
+2025/12/09 20:37:02 🎯 Cache HIT: user_lists:389031660848549888
+2025/12/09 20:37:02 🎯 Cache HIT: items:389031776439377900
+2025/12/09 20:37:07 🎯 Cache HIT: user_lists:389031660848549888
+2025/12/09 20:37:07 🎯 Cache HIT: items:389031776439377900
+2025/12/09 20:37:12 🎯 Cache HIT: user_lists:389031660848549888
+2025/12/09 20:37:12 🎯 Cache HIT: items:389031776439377900
+2025/12/09 20:37:17 🎯 Cache HIT: user_lists:389031660848549888
+2025/12/09 20:37:17 🎯 Cache HIT: items:389031776439377900
+2025/12/09 20:37:22 🎯 Cache HIT: user_lists:389031660848549888
+2025/12/09 20:37:22 🎯 Cache HIT: items:389031776439377900
+2025/12/09 20:37:27 🎯 Cache HIT: user_lists:389031660848549888
+2025/12/09 20:37:27 🎯 Cache HIT: items:389031776439377900
+2025/12/09 20:37:32 🎯 Cache HIT: user_lists:389031660848549888
+2025/12/09 20:37:32 🎯 Cache HIT: items:389031776439377900
+2025/12/09 20:37:37 🎯 Cache HIT: user_lists:389031660848549888
+2025/12/09 20:37:37 🎯 Cache HIT: items:389031776439377900
+2025/12/09 20:37:42 🎯 Cache HIT: user_lists:389031660848549888
+2025/12/09 20:37:42 🎯 Cache HIT: items:389031776439377900
+2025/12/09 20:37:47 🎯 Cache HIT: user_lists:389031660848549888
+2025/12/09 20:37:47 🎯 Cache HIT: items:389031776439377900
+2025/12/09 20:37:52 🎯 Cache HIT: user_lists:389031660848549888
+2025/12/09 20:37:52 🎯 Cache HIT: items:389031776439377900
+2025/12/09 20:37:57 🎯 Cache HIT: user_lists:389031660848549888
+2025/12/09 20:37:57 🎯 Cache HIT: items:389031776439377900
+2025/12/09 20:38:02 🎯 Cache HIT: user_lists:389031660848549888
+2025/12/09 20:38:02 🎯 Cache HIT: items:389031776439377900
+2025/12/09 20:38:07 🎯 Cache HIT: user_lists:389031660848549888
+2025/12/09 20:38:07 🎯 Cache HIT: items:389031776439377900
+2025/12/09 20:38:12 🎯 Cache HIT: user_lists:389031660848549888
+2025/12/09 20:38:12 🎯 Cache HIT: items:389031776439377900
+2025/12/09 20:38:17 🎯 Cache HIT: user_lists:389031660848549888
+2025/12/09 20:38:17 🎯 Cache HIT: items:389031776439377900
+2025/12/09 20:38:22 🎯 Cache HIT: user_lists:389031660848549888
+2025/12/09 20:38:22 🎯 Cache HIT: items:389031776439377900
+2025/12/09 20:38:27 📭 Cache MISS: user_lists:389031660848549888
+2025/12/09 20:38:27 🧭 [TodoRepoV2] ListIndexQuery cluster=todo_user_db_0 shard=0058 table=user_list_index_0058 sql=SELECT list_id, role FROM user_list_index_0058 WHERE user_id = ? args=[389031660848549888]
+2025/12/09 20:38:27 🧭 [TodoRepoV2] FetchList cluster=todo_data_db_44 shard=0060 table=todo_lists_tab_0060 sql=SELECT list_id, title, owner_id FROM todo_lists_tab_0060 WHERE list_id = ? args=[389031776439377920]
+2025/12/09 20:38:27 📭 Cache MISS: items:389031776439377900
+2025/12/09 20:38:27 🧭 [TodoRepoV2] GetItemsByListID cluster=todo_data_db_3 shard=0045 table=todo_items_tab_0045 sql=
+		SELECT item_id, list_id, content, name, description, status, priority, due_date, tags, is_done, created_at, updated_at
+		FROM todo_items_tab_0045 
+		WHERE list_id = ?
+		ORDER BY created_at DESC
+	 args=[389031776439377900]
+2025/12/09 20:38:32 🎯 Cache HIT: user_lists:389031660848549888
+2025/12/09 20:38:32 🎯 Cache HIT: items:389031776439377900
+2025/12/09 20:38:37 🎯 Cache HIT: user_lists:389031660848549888
+2025/12/09 20:38:37 🎯 Cache HIT: items:389031776439377900
+2025/12/09 20:38:42 🎯 Cache HIT: user_lists:389031660848549888
+2025/12/09 20:38:42 🎯 Cache HIT: items:389031776439377900
+2025/12/09 20:38:47 🎯 Cache HIT: user_lists:389031660848549888
+2025/12/09 20:38:47 🎯 Cache HIT: items:389031776439377900
+2025/12/09 20:38:52 🎯 Cache HIT: user_lists:389031660848549888
+2025/12/09 20:38:52 🎯 Cache HIT: items:389031776439377900
+2025/12/09 20:38:57 🎯 Cache HIT: user_lists:389031660848549888
+2025/12/09 20:38:57 🎯 Cache HIT: items:389031776439377900
+2025/12/09 20:39:02 🎯 Cache HIT: user_lists:389031660848549888
+2025/12/09 20:39:02 🎯 Cache HIT: items:389031776439377900
+2025/12/09 20:39:07 🎯 Cache HIT: user_lists:389031660848549888
+2025/12/09 20:39:07 🎯 Cache HIT: items:389031776439377900
+2025/12/09 20:39:12 🎯 Cache HIT: user_lists:389031660848549888
+2025/12/09 20:39:12 🎯 Cache HIT: items:389031776439377900
+2025/12/09 20:39:17 🎯 Cache HIT: user_lists:389031660848549888
+2025/12/09 20:39:17 🎯 Cache HIT: items:389031776439377900
+2025/12/09 20:39:22 🎯 Cache HIT: user_lists:389031660848549888
+2025/12/09 20:39:22 🎯 Cache HIT: items:389031776439377900
+2025/12/09 20:39:27 🎯 Cache HIT: user_lists:389031660848549888
+2025/12/09 20:39:27 🎯 Cache HIT: items:389031776439377900
+2025/12/09 20:39:42 ✅ Sharding Router V2 Initialized
+2025/12/09 20:39:42 ✅ Redis connected successfully
+2025/12/09 20:39:42 ✅ Kafka producer created successfully
+2025/12/09 20:39:42 🚀 TodoList App running on :8080
+2025/12/09 20:39:42 ✨ Features: Sharding, Redis Cache, CAPTCHA, Media Upload (Kafka)
+2025/12/09 20:39:47 🎯 Cache HIT: user_lists:389031660848549888
+2025/12/09 20:39:47 🎯 Cache HIT: items:389031776439377900
+2025/12/09 20:39:50 🎯 Cache HIT: user_lists:389031660848549888
+2025/12/09 20:39:50 🎯 Cache HIT: items:389031776439377900
+2025/12/09 20:39:51 🎯 Cache HIT: user_lists:389031660848549888
+2025/12/09 20:39:51 🎯 Cache HIT: items:389031776439377900
+2025/12/09 20:39:51 🎯 Cache HIT: user_lists:389031660848549888
+2025/12/09 20:39:51 🎯 Cache HIT: items:389031776439377900
+2025/12/09 20:39:51 🎯 Cache HIT: user_lists:389031660848549888
+2025/12/09 20:39:51 🎯 Cache HIT: items:389031776439377900
+2025/12/09 20:39:56 🎯 Cache HIT: items:389031776439377900
+2025/12/09 20:39:56 🎯 Cache HIT: user_lists:389031660848549888
+2025/12/09 20:39:56 🎯 Cache HIT: items:389031776439377900
+2025/12/09 20:40:01 🎯 Cache HIT: user_lists:389031660848549888
+2025/12/09 20:40:01 🎯 Cache HIT: items:389031776439377900
+2025/12/09 20:40:06 🎯 Cache HIT: user_lists:389031660848549888
+2025/12/09 20:40:06 🎯 Cache HIT: items:389031776439377900
+2025/12/09 20:40:11 🎯 Cache HIT: user_lists:389031660848549888
+2025/12/09 20:40:11 🎯 Cache HIT: items:389031776439377900
+2025/12/09 20:40:16 🎯 Cache HIT: user_lists:389031660848549888
+2025/12/09 20:40:16 🎯 Cache HIT: items:389031776439377900
+2025/12/09 20:40:21 🎯 Cache HIT: user_lists:389031660848549888
+2025/12/09 20:40:21 🎯 Cache HIT: items:389031776439377900
+2025/12/09 20:40:26 🎯 Cache HIT: user_lists:389031660848549888
+2025/12/09 20:40:26 🎯 Cache HIT: items:389031776439377900
+2025/12/09 20:40:31 🎯 Cache HIT: user_lists:389031660848549888
+2025/12/09 20:40:31 🎯 Cache HIT: items:389031776439377900
+2025/12/09 20:40:36 🎯 Cache HIT: user_lists:389031660848549888
+2025/12/09 20:40:36 🎯 Cache HIT: items:389031776439377900
+2025/12/09 20:40:41 🎯 Cache HIT: user_lists:389031660848549888
+2025/12/09 20:40:41 🎯 Cache HIT: items:389031776439377900
+2025/12/09 20:40:46 🎯 Cache HIT: user_lists:389031660848549888
+2025/12/09 20:40:46 🎯 Cache HIT: items:389031776439377900
+2025/12/09 20:40:51 🎯 Cache HIT: user_lists:389031660848549888
+2025/12/09 20:40:51 🎯 Cache HIT: items:389031776439377900
+2025/12/09 20:40:56 🎯 Cache HIT: user_lists:389031660848549888
+2025/12/09 20:40:56 🎯 Cache HIT: items:389031776439377900
+2025/12/09 20:41:01 🎯 Cache HIT: user_lists:389031660848549888
+2025/12/09 20:41:01 🎯 Cache HIT: items:389031776439377900
+2025/12/09 20:41:06 🎯 Cache HIT: user_lists:389031660848549888
+2025/12/09 20:41:06 🎯 Cache HIT: items:389031776439377900
+2025/12/09 20:41:11 🎯 Cache HIT: user_lists:389031660848549888
+2025/12/09 20:41:11 🎯 Cache HIT: items:389031776439377900
+2025/12/09 20:41:16 🎯 Cache HIT: user_lists:389031660848549888
+2025/12/09 20:41:16 🎯 Cache HIT: items:389031776439377900
+2025/12/09 20:41:21 🎯 Cache HIT: user_lists:389031660848549888
+2025/12/09 20:41:21 🎯 Cache HIT: items:389031776439377900
+2025/12/09 20:41:26 🎯 Cache HIT: user_lists:389031660848549888
+2025/12/09 20:41:26 🎯 Cache HIT: items:389031776439377900
+2025/12/09 20:41:31 🎯 Cache HIT: user_lists:389031660848549888
+2025/12/09 20:41:31 🎯 Cache HIT: items:389031776439377900
+2025/12/09 20:41:36 🎯 Cache HIT: user_lists:389031660848549888
+2025/12/09 20:41:36 🎯 Cache HIT: items:389031776439377900
+2025/12/09 20:41:41 🎯 Cache HIT: user_lists:389031660848549888
+2025/12/09 20:41:41 🎯 Cache HIT: items:389031776439377900
+2025/12/09 20:41:46 🎯 Cache HIT: user_lists:389031660848549888
+2025/12/09 20:41:46 🎯 Cache HIT: items:389031776439377900
+2025/12/09 20:41:51 🎯 Cache HIT: user_lists:389031660848549888
+2025/12/09 20:41:51 🎯 Cache HIT: items:389031776439377900
+2025/12/09 20:41:56 🎯 Cache HIT: user_lists:389031660848549888
+2025/12/09 20:41:56 🎯 Cache HIT: items:389031776439377900
+2025/12/09 20:42:01 🎯 Cache HIT: user_lists:389031660848549888
+2025/12/09 20:42:01 🎯 Cache HIT: items:389031776439377900
+2025/12/09 20:42:06 🎯 Cache HIT: user_lists:389031660848549888
+2025/12/09 20:42:06 🎯 Cache HIT: items:389031776439377900
+2025/12/09 20:42:11 🎯 Cache HIT: user_lists:389031660848549888
+2025/12/09 20:42:11 🎯 Cache HIT: items:389031776439377900
+2025/12/09 20:42:16 🎯 Cache HIT: user_lists:389031660848549888
+2025/12/09 20:42:16 🎯 Cache HIT: items:389031776439377900
+2025/12/09 20:42:21 🎯 Cache HIT: user_lists:389031660848549888
+2025/12/09 20:42:21 🎯 Cache HIT: items:389031776439377900
+2025/12/09 20:42:26 🎯 Cache HIT: user_lists:389031660848549888
+2025/12/09 20:42:26 🎯 Cache HIT: items:389031776439377900
+2025/12/09 20:42:31 🎯 Cache HIT: user_lists:389031660848549888
+2025/12/09 20:42:31 🎯 Cache HIT: items:389031776439377900
+2025/12/09 20:42:36 🎯 Cache HIT: user_lists:389031660848549888
+2025/12/09 20:42:36 🎯 Cache HIT: items:389031776439377900
+2025/12/09 20:42:41 🎯 Cache HIT: user_lists:389031660848549888
+2025/12/09 20:42:41 🎯 Cache HIT: items:389031776439377900
+2025/12/09 20:42:46 🎯 Cache HIT: user_lists:389031660848549888
+2025/12/09 20:42:46 🎯 Cache HIT: items:389031776439377900
+2025/12/09 20:42:51 🎯 Cache HIT: user_lists:389031660848549888
+2025/12/09 20:42:51 🎯 Cache HIT: items:389031776439377900
+2025/12/09 20:42:56 🎯 Cache HIT: user_lists:389031660848549888
+2025/12/09 20:42:56 🎯 Cache HIT: items:389031776439377900
+2025/12/09 20:43:01 🎯 Cache HIT: user_lists:389031660848549888
+2025/12/09 20:43:01 🎯 Cache HIT: items:389031776439377900
+2025/12/09 20:43:06 🎯 Cache HIT: user_lists:389031660848549888
+2025/12/09 20:43:06 🎯 Cache HIT: items:389031776439377900
+2025/12/09 20:43:11 🎯 Cache HIT: user_lists:389031660848549888
+2025/12/09 20:43:11 🎯 Cache HIT: items:389031776439377900
+2025/12/09 20:43:16 🎯 Cache HIT: user_lists:389031660848549888
+2025/12/09 20:43:16 🎯 Cache HIT: items:389031776439377900
+2025/12/09 20:43:21 🎯 Cache HIT: user_lists:389031660848549888
+2025/12/09 20:43:21 🎯 Cache HIT: items:389031776439377900
+2025/12/09 20:43:26 🎯 Cache HIT: user_lists:389031660848549888
+2025/12/09 20:43:26 🎯 Cache HIT: items:389031776439377900
+2025/12/09 20:43:31 📭 Cache MISS: user_lists:389031660848549888
+2025/12/09 20:43:31 🧭 [TodoRepoV2] ListIndexQuery cluster=todo_user_db_0 shard=0058 table=user_list_index_0058 sql=SELECT list_id, role FROM user_list_index_0058 WHERE user_id = ? args=[389031660848549888]
+2025/12/09 20:43:31 🧭 [TodoRepoV2] FetchList cluster=todo_data_db_44 shard=0060 table=todo_lists_tab_0060 sql=SELECT list_id, title, owner_id FROM todo_lists_tab_0060 WHERE list_id = ? args=[389031776439377920]
+2025/12/09 20:43:31 📭 Cache MISS: items:389031776439377900
+2025/12/09 20:43:31 🧭 [TodoRepoV2] GetItemsByListID cluster=todo_data_db_3 shard=0045 table=todo_items_tab_0045 sql=
+		SELECT item_id, list_id, content, name, description, status, priority, due_date, tags, is_done, created_at, updated_at
+		FROM todo_items_tab_0045 
+		WHERE list_id = ?
+		ORDER BY created_at DESC
+	 args=[389031776439377900]
+2025/12/09 20:43:36 🎯 Cache HIT: user_lists:389031660848549888
+2025/12/09 20:43:36 🎯 Cache HIT: items:389031776439377900
+2025/12/09 20:43:41 🎯 Cache HIT: user_lists:389031660848549888
+2025/12/09 20:43:41 🎯 Cache HIT: items:389031776439377900
+2025/12/09 20:43:46 🎯 Cache HIT: user_lists:389031660848549888
+2025/12/09 20:43:46 🎯 Cache HIT: items:389031776439377900
+2025/12/09 20:43:51 🎯 Cache HIT: user_lists:389031660848549888
+2025/12/09 20:43:51 🎯 Cache HIT: items:389031776439377900
+2025/12/09 20:43:56 🎯 Cache HIT: user_lists:389031660848549888
+2025/12/09 20:43:56 🎯 Cache HIT: items:389031776439377900
+2025/12/09 20:44:01 🎯 Cache HIT: user_lists:389031660848549888
+2025/12/09 20:44:01 🎯 Cache HIT: items:389031776439377900
+2025/12/09 20:44:06 🎯 Cache HIT: user_lists:389031660848549888
+2025/12/09 20:44:06 🎯 Cache HIT: items:389031776439377900
+2025/12/09 20:44:11 🎯 Cache HIT: user_lists:389031660848549888
+2025/12/09 20:44:11 🎯 Cache HIT: items:389031776439377900
+2025/12/09 20:44:16 🎯 Cache HIT: user_lists:389031660848549888
+2025/12/09 20:44:16 🎯 Cache HIT: items:389031776439377900
+2025/12/09 20:44:21 🎯 Cache HIT: user_lists:389031660848549888
+2025/12/09 20:44:21 🎯 Cache HIT: items:389031776439377900
+2025/12/09 20:44:26 🎯 Cache HIT: user_lists:389031660848549888
+2025/12/09 20:44:26 🎯 Cache HIT: items:389031776439377900
+2025/12/09 20:44:31 🎯 Cache HIT: user_lists:389031660848549888
+2025/12/09 20:44:31 🎯 Cache HIT: items:389031776439377900
+2025/12/09 20:44:48 ✅ Sharding Router V2 Initialized
+2025/12/09 20:44:48 ✅ Redis connected successfully
+2025/12/09 20:44:48 ✅ Kafka producer created successfully
+2025/12/09 20:44:48 🚀 TodoList App running on :8080
+2025/12/09 20:44:48 ✨ Features: Sharding, Redis Cache, CAPTCHA, Media Upload (Kafka)
+2025/12/09 20:44:51 🎯 Cache HIT: user_lists:389031660848549888
+2025/12/09 20:44:51 🎯 Cache HIT: items:389031776439377900
+2025/12/09 20:44:56 🎯 Cache HIT: user_lists:389031660848549888
+2025/12/09 20:44:56 🎯 Cache HIT: items:389031776439377900
+2025/12/09 20:44:56 🎯 Cache HIT: user_lists:389031660848549888
+2025/12/09 20:44:56 🎯 Cache HIT: items:389031776439377900
+2025/12/09 20:44:56 🎯 Cache HIT: user_lists:389031660848549888
+2025/12/09 20:44:56 🎯 Cache HIT: items:389031776439377900
+2025/12/09 20:45:14 🎯 Cache HIT: items:389031776439377900
+2025/12/09 20:48:28 ✅ Sharding Router V2 Initialized
+2025/12/09 20:48:28 ✅ Redis connected successfully
+2025/12/09 20:48:28 ✅ Kafka producer created successfully
+2025/12/09 20:48:28 🚀 TodoList App running on :8080
+2025/12/09 20:48:28 ✨ Features: Sharding, Redis Cache, CAPTCHA, Media Upload (Kafka)
+2025/12/09 20:48:47 📭 Cache MISS: user_lists:389031660848549888
+2025/12/09 20:48:47 🧭 [TodoRepoV2] ListIndexQuery cluster=todo_user_db_0 shard=0058 table=user_list_index_0058 sql=SELECT list_id, role FROM user_list_index_0058 WHERE user_id = ? args=[389031660848549888]
+2025/12/09 20:48:47 🧭 [TodoRepoV2] FetchList cluster=todo_data_db_44 shard=0060 table=todo_lists_tab_0060 sql=SELECT list_id, title, owner_id FROM todo_lists_tab_0060 WHERE list_id = ? args=[389031776439377920]
+2025/12/09 20:48:47 📭 Cache MISS: items:389031776439377900
+2025/12/09 20:48:47 🧭 [TodoRepoV2] GetItemsByListID cluster=todo_data_db_3 shard=0045 table=todo_items_tab_0045 sql=
+		SELECT item_id, list_id, content, name, description, status, priority, due_date, tags, is_done, created_at, updated_at
+		FROM todo_items_tab_0045 
+		WHERE list_id = ?
+		ORDER BY created_at DESC
+	 args=[389031776439377900]
+2025/12/09 20:48:52 🎯 Cache HIT: user_lists:389031660848549888
+2025/12/09 20:48:52 🎯 Cache HIT: items:389031776439377900
+2025/12/09 20:49:10 🎯 Cache HIT: items:389031776439377900
+2025/12/09 20:49:16 🎯 Cache HIT: user_lists:389031660848549888
+2025/12/09 20:49:16 🎯 Cache HIT: items:389031776439377900
+2025/12/09 20:49:31 🎯 Cache HIT: user_lists:389031660848549888
+2025/12/09 20:49:31 🎯 Cache HIT: items:389031776439377900
+2025/12/09 20:49:36 🎯 Cache HIT: user_lists:389031660848549888
+2025/12/09 20:49:36 🎯 Cache HIT: items:389031776439377900
+2025/12/09 20:49:41 🎯 Cache HIT: user_lists:389031660848549888
+2025/12/09 20:49:41 🎯 Cache HIT: items:389031776439377900
+2025/12/09 20:49:46 🎯 Cache HIT: user_lists:389031660848549888
+2025/12/09 20:49:46 🎯 Cache HIT: items:389031776439377900
+2025/12/09 20:49:51 🎯 Cache HIT: user_lists:389031660848549888
+2025/12/09 20:49:51 🎯 Cache HIT: items:389031776439377900
+2025/12/09 20:49:56 🎯 Cache HIT: user_lists:389031660848549888
+2025/12/09 20:49:56 🎯 Cache HIT: items:389031776439377900
+2025/12/09 20:50:01 🎯 Cache HIT: user_lists:389031660848549888
+2025/12/09 20:50:01 🎯 Cache HIT: items:389031776439377900
+2025/12/09 20:50:06 🎯 Cache HIT: user_lists:389031660848549888
+2025/12/09 20:50:06 🎯 Cache HIT: items:389031776439377900
+2025/12/09 20:50:11 🎯 Cache HIT: user_lists:389031660848549888
+2025/12/09 20:50:11 🎯 Cache HIT: items:389031776439377900
+2025/12/09 20:50:16 🎯 Cache HIT: user_lists:389031660848549888
+2025/12/09 20:50:16 🎯 Cache HIT: items:389031776439377900
+2025/12/09 20:50:21 🎯 Cache HIT: user_lists:389031660848549888
+2025/12/09 20:50:21 🎯 Cache HIT: items:389031776439377900
+2025/12/09 20:50:26 🎯 Cache HIT: user_lists:389031660848549888
+2025/12/09 20:50:26 🎯 Cache HIT: items:389031776439377900
+2025/12/09 20:50:31 🎯 Cache HIT: user_lists:389031660848549888
+2025/12/09 20:50:31 🎯 Cache HIT: items:389031776439377900
+2025/12/09 20:50:36 🎯 Cache HIT: user_lists:389031660848549888
+2025/12/09 20:50:36 🎯 Cache HIT: items:389031776439377900
+2025/12/09 20:50:41 🎯 Cache HIT: user_lists:389031660848549888
+2025/12/09 20:50:41 🎯 Cache HIT: items:389031776439377900
+2025/12/09 20:50:46 🎯 Cache HIT: user_lists:389031660848549888
+2025/12/09 20:50:46 🎯 Cache HIT: items:389031776439377900
+2025/12/09 20:50:51 🎯 Cache HIT: user_lists:389031660848549888
+2025/12/09 20:50:51 🎯 Cache HIT: items:389031776439377900
+2025/12/09 20:50:56 🎯 Cache HIT: user_lists:389031660848549888
+2025/12/09 20:50:56 🎯 Cache HIT: items:389031776439377900
+2025/12/09 20:51:01 🎯 Cache HIT: user_lists:389031660848549888
+2025/12/09 20:51:01 🎯 Cache HIT: items:389031776439377900
+2025/12/09 20:51:06 🎯 Cache HIT: user_lists:389031660848549888
+2025/12/09 20:51:06 🎯 Cache HIT: items:389031776439377900
+2025/12/09 20:51:11 🎯 Cache HIT: user_lists:389031660848549888
+2025/12/09 20:51:11 🎯 Cache HIT: items:389031776439377900
+2025/12/09 20:51:16 🎯 Cache HIT: user_lists:389031660848549888
+2025/12/09 20:51:16 🎯 Cache HIT: items:389031776439377900
+2025/12/09 20:51:21 🎯 Cache HIT: user_lists:389031660848549888
+2025/12/09 20:51:21 🎯 Cache HIT: items:389031776439377900
+2025/12/09 20:51:26 🎯 Cache HIT: user_lists:389031660848549888
+2025/12/09 20:51:26 🎯 Cache HIT: items:389031776439377900
+2025/12/09 20:51:31 🎯 Cache HIT: user_lists:389031660848549888
+2025/12/09 20:51:31 🎯 Cache HIT: items:389031776439377900
+2025/12/09 20:51:36 🎯 Cache HIT: user_lists:389031660848549888
+2025/12/09 20:51:36 🎯 Cache HIT: items:389031776439377900
+2025/12/09 20:51:41 🎯 Cache HIT: user_lists:389031660848549888
+2025/12/09 20:51:41 🎯 Cache HIT: items:389031776439377900
+2025/12/09 20:51:46 🎯 Cache HIT: user_lists:389031660848549888
+2025/12/09 20:51:46 🎯 Cache HIT: items:389031776439377900
+2025/12/09 20:51:51 🎯 Cache HIT: user_lists:389031660848549888
+2025/12/09 20:51:51 🎯 Cache HIT: items:389031776439377900
+2025/12/09 20:51:56 🎯 Cache HIT: user_lists:389031660848549888
+2025/12/09 20:51:56 🎯 Cache HIT: items:389031776439377900
+2025/12/09 20:52:01 🎯 Cache HIT: user_lists:389031660848549888
+2025/12/09 20:52:01 🎯 Cache HIT: items:389031776439377900
+2025/12/09 20:52:21 ✅ Sharding Router V2 Initialized
+2025/12/09 20:52:21 ✅ Redis connected successfully
+2025/12/09 20:52:21 ✅ Kafka producer created successfully
+2025/12/09 20:52:21 🚀 TodoList App running on :8080
+2025/12/09 20:52:21 ✨ Features: Sharding, Redis Cache, CAPTCHA, Media Upload (Kafka)
+2025/12/09 20:52:21 🎯 Cache HIT: user_lists:389031660848549888
+2025/12/09 20:52:21 🎯 Cache HIT: items:389031776439377900
+2025/12/09 20:52:26 🎯 Cache HIT: user_lists:389031660848549888
+2025/12/09 20:52:26 🎯 Cache HIT: items:389031776439377900
+2025/12/09 20:52:31 🎯 Cache HIT: user_lists:389031660848549888
+2025/12/09 20:52:31 🎯 Cache HIT: items:389031776439377900
+2025/12/09 20:52:31 🎯 Cache HIT: user_lists:389031660848549888
+2025/12/09 20:52:31 🎯 Cache HIT: items:389031776439377900
+2025/12/09 20:52:32 🎯 Cache HIT: user_lists:389031660848549888
+2025/12/09 20:52:32 🎯 Cache HIT: items:389031776439377900
+2025/12/09 20:52:32 🎯 Cache HIT: user_lists:389031660848549888
+2025/12/09 20:52:32 🎯 Cache HIT: items:389031776439377900
+2025/12/09 20:52:40 🎯 Cache HIT: items:389031776439377900
+2025/12/09 20:53:28 🎯 Cache HIT: items:389031776439377900
+2025/12/09 20:54:11 ✅ Sharding Router V2 Initialized
+2025/12/09 20:54:11 ✅ Redis connected successfully
+2025/12/09 20:54:11 ✅ Kafka producer created successfully
+2025/12/09 20:54:11 🚀 TodoList App running on :8080
+2025/12/09 20:54:11 ✨ Features: Sharding, Redis Cache, CAPTCHA, Media Upload (Kafka)
+2025/12/09 20:54:25 📥 [TodoHandler] CreateItemExtended request user=389031660848549888 list=389031776439377900
+2025/12/09 20:54:25 📭 Cache MISS: items:389031776439377900
+2025/12/09 20:54:25 🧭 [TodoRepoV2] GetItemsByListID cluster=todo_data_db_3 shard=0045 table=todo_items_tab_0045 sql=
+		SELECT item_id, list_id, content, name, description, status, priority, due_date, tags, is_done, created_at, updated_at
+		FROM todo_items_tab_0045 
+		WHERE list_id = ?
+		ORDER BY created_at DESC
+	 args=[389031776439377900]
+2025/12/09 21:02:06 ✅ Sharding Router V2 Initialized
+2025/12/09 21:02:06 ✅ Redis connected successfully
+2025/12/09 21:02:06 ✅ Kafka producer created successfully
+2025/12/09 21:02:06 🚀 TodoList App running on :8080
+2025/12/09 21:02:06 ✨ Features: Sharding, Redis Cache, CAPTCHA, Media Upload (Kafka)
+2025/12/09 21:02:10 📭 Cache MISS: user_lists:389031660848549888
+2025/12/09 21:02:10 🧭 [TodoRepoV2] ListIndexQuery cluster=todo_user_db_0 shard=0058 table=user_list_index_0058 sql=SELECT list_id, role FROM user_list_index_0058 WHERE user_id = ? args=[389031660848549888]
+2025/12/09 21:02:10 🧭 [TodoRepoV2] FetchList cluster=todo_data_db_44 shard=0060 table=todo_lists_tab_0060 sql=SELECT list_id, title, owner_id FROM todo_lists_tab_0060 WHERE list_id = ? args=[389031776439377920]
+2025/12/09 21:02:10 📭 Cache MISS: items:389031776439377900
+2025/12/09 21:02:10 🧭 [TodoRepoV2] GetItemsByListID cluster=todo_data_db_3 shard=0045 table=todo_items_tab_0045 sql=
+		SELECT item_id, list_id, content, name, description, status, priority, due_date, tags, is_done, created_at, updated_at
+		FROM todo_items_tab_0045 
+		WHERE list_id = ?
+		ORDER BY created_at DESC
+	 args=[389031776439377900]
+2025/12/09 21:02:15 🎯 Cache HIT: user_lists:389031660848549888
+2025/12/09 21:02:15 🎯 Cache HIT: items:389031776439377900
+2025/12/09 21:02:22 📥 [TodoHandler] CreateItemExtended request user=389031660848549888 list=389031776439377900
+2025/12/09 21:02:22 🎯 Cache HIT: items:389031776439377900
+2025/12/09 21:07:42 ✅ Sharding Router V2 Initialized
+2025/12/09 21:07:42 ✅ Redis connected successfully
+2025/12/09 21:07:42 ✅ Kafka producer created successfully
+2025/12/09 21:07:42 🚀 TodoList App running on :8080
+2025/12/09 21:07:42 ✨ Features: Sharding, Redis Cache, CAPTCHA, Media Upload (Kafka)
+2025/12/09 21:07:52 📥 [TodoHandler] CreateItemExtended request user=389031660848549888 list=389031776439377900
+2025/12/09 21:07:52 ❌ [TodoHandler] CreateItemExtended decode error user=389031660848549888 list=389031776439377900 err=parsing time "2025-12-10 00:00:00" as "2006-01-02T15:04:05Z07:00": cannot parse " 00:00:00" as "T"
+2025/12/09 21:07:52 📭 Cache MISS: items:389031776439377900
+2025/12/09 21:07:52 🧭 [TodoRepoV2] GetItemsByListID cluster=todo_data_db_3 shard=0045 table=todo_items_tab_0045 sql=
+		SELECT item_id, list_id, content, name, description, status, priority, due_date, tags, is_done, created_at, updated_at
+		FROM todo_items_tab_0045 
+		WHERE list_id = ?
+		ORDER BY created_at DESC
+	 args=[389031776439377900]
+2025/12/09 21:09:02 📥 [TodoHandler] CreateItemExtended request user=389031660848549888 list=389031776439377900
+2025/12/09 21:09:02 ❌ [TodoHandler] CreateItemExtended decode error user=389031660848549888 list=389031776439377900 err=parsing time "2025-12-10 00:00:00" as "2006-01-02T15:04:05Z07:00": cannot parse " 00:00:00" as "T"
+2025/12/09 21:09:02 🎯 Cache HIT: items:389031776439377900
+2025/12/09 21:09:25 ✅ Sharding Router V2 Initialized
+2025/12/09 21:09:25 ✅ Redis connected successfully
+2025/12/09 21:09:25 ✅ Kafka producer created successfully
+2025/12/09 21:09:25 🚀 TodoList App running on :8080
+2025/12/09 21:09:25 ✨ Features: Sharding, Redis Cache, CAPTCHA, Media Upload (Kafka)
+2025/12/09 21:10:06 ✅ Sharding Router V2 Initialized
+2025/12/09 21:10:06 ✅ Redis connected successfully
+2025/12/09 21:10:06 ✅ Kafka producer created successfully
+2025/12/09 21:10:06 🚀 TodoList App running on :8080
+2025/12/09 21:10:06 ✨ Features: Sharding, Redis Cache, CAPTCHA, Media Upload (Kafka)
+2025/12/09 21:10:12 📭 Cache MISS: user_lists:389031660848549888
+2025/12/09 21:10:12 🧭 [TodoRepoV2] ListIndexQuery cluster=todo_user_db_0 shard=0058 table=user_list_index_0058 sql=SELECT list_id, role FROM user_list_index_0058 WHERE user_id = ? args=[389031660848549888]
+2025/12/09 21:10:12 🧭 [TodoRepoV2] FetchList cluster=todo_data_db_44 shard=0060 table=todo_lists_tab_0060 sql=SELECT list_id, title, owner_id FROM todo_lists_tab_0060 WHERE list_id = ? args=[389031776439377920]
+2025/12/09 21:10:12 🎯 Cache HIT: items:389031776439377900
+2025/12/09 21:10:17 🎯 Cache HIT: user_lists:389031660848549888
+2025/12/09 21:10:17 🎯 Cache HIT: items:389031776439377900
+2025/12/09 21:10:26 📥 [TodoHandler] CreateItemExtended request user=389031660848549888 list=389031776439377900
+2025/12/09 21:10:26 📦 [TodoHandler] CreateItemExtended payload user=389031660848549888 list=389031776439377900 item={ID:0 ListID:0 Name:todo2 Description:te Content:todo2 Status:in_progress Priority: DueDate:2025-12-10 00:00:00 +0000 UTC Tags: IsDone:false CreatedAt:0001-01-01 00:00:00 +0000 UTC UpdatedAt:0001-01-01 00:00:00 +0000 UTC}
+2025/12/09 21:10:26 📝 [TodoService] CreateItemExtended user=389031660848549888 list=389031776439377900 item=&{ID:0 ListID:0 Name:todo2 Description:te Content:todo2 Status:in_progress Priority: DueDate:2025-12-10 00:00:00 +0000 UTC Tags: IsDone:false CreatedAt:0001-01-01 00:00:00 +0000 UTC UpdatedAt:0001-01-01 00:00:00 +0000 UTC}
+2025/12/09 21:10:26 🧭 [TodoRepoV2] CreateItem cluster=todo_data_db_3 shard=0045 table=todo_items_tab_0045 sql=
+		INSERT INTO todo_items_tab_0045 (item_id, list_id, content, name, description, status, priority, due_date, tags, is_done) 
+		VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+	 args=[389041099957739520 389031776439377900 todo2 todo2 te in_progress medium 2025-12-10 00:00:00 +0000 UTC  false]
+2025/12/09 21:10:27 📭 Cache MISS: items:389031776439377900
+2025/12/09 21:10:27 🧭 [TodoRepoV2] GetItemsByListID cluster=todo_data_db_3 shard=0045 table=todo_items_tab_0045 sql=
+		SELECT item_id, list_id, content, name, description, status, priority, due_date, tags, is_done, created_at, updated_at
+		FROM todo_items_tab_0045 
+		WHERE list_id = ?
+		ORDER BY created_at DESC
+	 args=[389031776439377900]
+2025/12/09 21:10:38 📥 [TodoHandler] CreateItemExtended request user=389031660848549888 list=389031776439377900
+2025/12/09 21:10:38 📦 [TodoHandler] CreateItemExtended payload user=389031660848549888 list=389031776439377900 item={ID:0 ListID:0 Name:todo Description:t Content:todo Status:completed Priority: DueDate:2025-12-10 00:00:00 +0000 UTC Tags: IsDone:false CreatedAt:0001-01-01 00:00:00 +0000 UTC UpdatedAt:0001-01-01 00:00:00 +0000 UTC}
+2025/12/09 21:10:38 📝 [TodoService] CreateItemExtended user=389031660848549888 list=389031776439377900 item=&{ID:0 ListID:0 Name:todo Description:t Content:todo Status:completed Priority: DueDate:2025-12-10 00:00:00 +0000 UTC Tags: IsDone:false CreatedAt:0001-01-01 00:00:00 +0000 UTC UpdatedAt:0001-01-01 00:00:00 +0000 UTC}
+2025/12/09 21:10:38 🧭 [TodoRepoV2] CreateItem cluster=todo_data_db_3 shard=0045 table=todo_items_tab_0045 sql=
+		INSERT INTO todo_items_tab_0045 (item_id, list_id, content, name, description, status, priority, due_date, tags, is_done) 
+		VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+	 args=[389041150998224896 389031776439377900 todo todo t completed medium 2025-12-10 00:00:00 +0000 UTC  false]
+2025/12/09 21:10:38 📭 Cache MISS: items:389031776439377900
+2025/12/09 21:10:38 🧭 [TodoRepoV2] GetItemsByListID cluster=todo_data_db_3 shard=0045 table=todo_items_tab_0045 sql=
+		SELECT item_id, list_id, content, name, description, status, priority, due_date, tags, is_done, created_at, updated_at
+		FROM todo_items_tab_0045 
+		WHERE list_id = ?
+		ORDER BY created_at DESC
+	 args=[389031776439377900]
+2025/12/09 21:10:49 🧭 [TodoRepoV2] GetListByID cluster=todo_data_db_3 shard=0045 table=todo_lists_tab_0045 sql=SELECT list_id, title, owner_id FROM todo_lists_tab_0045 WHERE list_id = ? args=[389031776439377900]
+2025/12/09 21:11:35 📝 [Register] Attempting registration for Email: huangdebao2010@163.com, Password: 123456
+2025/12/09 21:11:35 🧭 [UserRepoV2] EmailIndexLookup cluster=todo_user_db_0 shard=0009 table=user_email_index_0009 sql=SELECT user_id FROM user_email_index_0009 WHERE email = ? args=[huangdebao2010@163.com]
+2025/12/09 21:11:35 🗄️ user shard routing: user_id=389041390815940608 -> table=users_0002 db=0xc0000c1a00
+2025/12/09 21:11:35 🧭 [UserRepoV2] CreateUser cluster=todo_user_db_1 shard=0002 table=users_0002 sql=INSERT INTO users_0002 (user_id, email, password_hash, verification_code, is_verified) VALUES (?, ?, ?, ?, ?) args=[389041390815940608 huangdebao2010@163.com *** *** false]
+2025/12/09 21:11:35 🧭 [UserRepoV2] InsertEmailIndex cluster=todo_user_db_0 shard=0009 table=user_email_index_0009 sql=INSERT INTO user_email_index_0009 (email, user_id) VALUES (?, ?) args=[huangdebao2010@163.com 389041390815940608]
+2025/12/09 21:11:35 📧 [MOCK EMAIL] To: huangdebao2010@163.com | Code: 1536
+2025/12/09 21:11:37 🧭 [UserRepoV2] EmailIndexLookup cluster=todo_user_db_0 shard=0009 table=user_email_index_0009 sql=SELECT user_id FROM user_email_index_0009 WHERE email = ? args=[huangdebao2010@163.com]
+2025/12/09 21:11:37 🧭 [UserRepoV2] GetByID cluster=todo_user_db_1 shard=0002 table=users_0002 sql=SELECT user_id, email, password_hash, verification_code, is_verified, created_at FROM users_0002 WHERE user_id = ? args=[389041390815940608]
+2025/12/09 21:11:37 🧭 [UserRepoV2] EmailIndexLookup cluster=todo_user_db_0 shard=0009 table=user_email_index_0009 sql=SELECT user_id FROM user_email_index_0009 WHERE email = ? args=[huangdebao2010@163.com]
+2025/12/09 21:11:37 🧭 [UserRepoV2] GetByID cluster=todo_user_db_1 shard=0002 table=users_0002 sql=SELECT user_id, email, password_hash, verification_code, is_verified, created_at FROM users_0002 WHERE user_id = ? args=[389041390815940608]
+2025/12/09 21:11:37 🧭 [UserRepoV2] UpdateVerification cluster=todo_user_db_1 shard=0002 table=users_0002 sql=UPDATE users_0002 SET is_verified = ? WHERE user_id = ? args=[true 389041390815940608]
+2025/12/09 21:11:44 🧭 [UserRepoV2] EmailIndexLookup cluster=todo_user_db_0 shard=0009 table=user_email_index_0009 sql=SELECT user_id FROM user_email_index_0009 WHERE email = ? args=[huangdebao2010@163.com]
+2025/12/09 21:11:44 🧭 [UserRepoV2] GetByID cluster=todo_user_db_1 shard=0002 table=users_0002 sql=SELECT user_id, email, password_hash, verification_code, is_verified, created_at FROM users_0002 WHERE user_id = ? args=[389041390815940608]
+2025/12/09 21:11:44 📭 Cache MISS: user_lists:389041390815940608
+2025/12/09 21:11:44 🧭 [TodoRepoV2] ListIndexQuery cluster=todo_user_db_1 shard=0002 table=user_list_index_0002 sql=SELECT list_id, role FROM user_list_index_0002 WHERE user_id = ? args=[389041390815940608]
+2025/12/09 21:11:49 🎯 Cache HIT: user_lists:389041390815940608
+2025/12/09 21:11:54 🎯 Cache HIT: user_lists:389041390815940608
+2025/12/09 21:11:55 🧭 [TodoRepoV2] CreateList cluster=todo_data_db_13 shard=0049 table=todo_lists_tab_0049 sql=INSERT INTO todo_lists_tab_0049 (list_id, owner_id, title) VALUES (?, ?, ?) args=[389041474249039872 389041390815940608 huangdebao2010_list1]
+2025/12/09 21:11:55 🗄️ list insert success: list_id=389041474249039872 owner_id=389041390815940608 table=todo_lists_tab_0049 suffix=49
+2025/12/09 21:11:55 🧭 [TodoRepoV2] CreateListIndex cluster=todo_user_db_1 shard=0002 table=user_list_index_0002 sql=INSERT INTO user_list_index_0002 (user_id, list_id, role) VALUES (?, ?, ?) args=[389041390815940608 389041474249039872 OWNER]
+2025/12/09 21:11:55 ✅ index insert success: list_id=389041474249039872 owner_id=389041390815940608 idxTable=user_list_index_0002
+2025/12/09 21:11:55 📭 Cache MISS: user_lists:389041390815940608
+2025/12/09 21:11:55 🧭 [TodoRepoV2] ListIndexQuery cluster=todo_user_db_1 shard=0002 table=user_list_index_0002 sql=SELECT list_id, role FROM user_list_index_0002 WHERE user_id = ? args=[389041390815940608]
+2025/12/09 21:11:55 🧭 [TodoRepoV2] FetchList cluster=todo_data_db_13 shard=0049 table=todo_lists_tab_0049 sql=SELECT list_id, title, owner_id FROM todo_lists_tab_0049 WHERE list_id = ? args=[389041474249039872]
+2025/12/09 21:11:55 📭 Cache MISS: items:389041474249039900
+2025/12/09 21:11:55 🧭 [TodoRepoV2] GetItemsByListID cluster=todo_data_db_2 shard=0000 table=todo_items_tab_0000 sql=
+		SELECT item_id, list_id, content, name, description, status, priority, due_date, tags, is_done, created_at, updated_at
+		FROM todo_items_tab_0000 
+		WHERE list_id = ?
+		ORDER BY created_at DESC
+	 args=[389041474249039900]
+2025/12/09 21:12:05 📥 [TodoHandler] CreateItemExtended request user=389041390815940608 list=389041474249039900
+2025/12/09 21:12:05 📦 [TodoHandler] CreateItemExtended payload user=389041390815940608 list=389041474249039900 item={ID:0 ListID:0 Name:111 Description:1211 Content:111 Status:in_progress Priority: DueDate:2025-12-16 00:00:00 +0000 UTC Tags: IsDone:false CreatedAt:0001-01-01 00:00:00 +0000 UTC UpdatedAt:0001-01-01 00:00:00 +0000 UTC}
+2025/12/09 21:12:05 📝 [TodoService] CreateItemExtended user=389041390815940608 list=389041474249039900 item=&{ID:0 ListID:0 Name:111 Description:1211 Content:111 Status:in_progress Priority: DueDate:2025-12-16 00:00:00 +0000 UTC Tags: IsDone:false CreatedAt:0001-01-01 00:00:00 +0000 UTC UpdatedAt:0001-01-01 00:00:00 +0000 UTC}
+2025/12/09 21:12:05 🧭 [TodoRepoV2] CreateItem cluster=todo_data_db_2 shard=0000 table=todo_items_tab_0000 sql=
+		INSERT INTO todo_items_tab_0000 (item_id, list_id, content, name, description, status, priority, due_date, tags, is_done) 
+		VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+	 args=[389041514447249408 389041474249039900 111 111 1211 in_progress medium 2025-12-16 00:00:00 +0000 UTC  false]
+2025/12/09 21:12:05 📭 Cache MISS: items:389041474249039900
+2025/12/09 21:12:05 🧭 [TodoRepoV2] GetItemsByListID cluster=todo_data_db_2 shard=0000 table=todo_items_tab_0000 sql=
+		SELECT item_id, list_id, content, name, description, status, priority, due_date, tags, is_done, created_at, updated_at
+		FROM todo_items_tab_0000 
+		WHERE list_id = ?
+		ORDER BY created_at DESC
+	 args=[389041474249039900]
+2025/12/09 21:12:14 🧭 [TodoRepoV2] GetListByID cluster=todo_data_db_2 shard=0000 table=todo_lists_tab_0000 sql=SELECT list_id, title, owner_id FROM todo_lists_tab_0000 WHERE list_id = ? args=[389041474249039900]
+2025/12/09 21:12:33 🧭 [TodoRepoV2] GetListByID cluster=todo_data_db_2 shard=0000 table=todo_lists_tab_0000 sql=SELECT list_id, title, owner_id FROM todo_lists_tab_0000 WHERE list_id = ? args=[389041474249039900]
+2025/12/09 21:14:00 🧭 [TodoRepoV2] GetListByID cluster=todo_data_db_2 shard=0000 table=todo_lists_tab_0000 sql=SELECT list_id, title, owner_id FROM todo_lists_tab_0000 WHERE list_id = ? args=[389041474249039900]
+2025/12/09 21:18:25 📝 [Register] Attempting registration for Email: huangdebao_2012@163.com, Password: 123456
+2025/12/09 21:18:25 🧭 [UserRepoV2] EmailIndexLookup cluster=todo_user_db_4 shard=0057 table=user_email_index_0057 sql=SELECT user_id FROM user_email_index_0057 WHERE email = ? args=[huangdebao_2012@163.com]
+2025/12/09 21:18:25 🗄️ user shard routing: user_id=389043108517646336 -> table=users_0026 db=0xc00011c750
+2025/12/09 21:18:25 🧭 [UserRepoV2] CreateUser cluster=todo_user_db_15 shard=0026 table=users_0026 sql=INSERT INTO users_0026 (user_id, email, password_hash, verification_code, is_verified) VALUES (?, ?, ?, ?, ?) args=[389043108517646336 huangdebao_2012@163.com *** *** false]
+2025/12/09 21:18:25 🧭 [UserRepoV2] InsertEmailIndex cluster=todo_user_db_4 shard=0057 table=user_email_index_0057 sql=INSERT INTO user_email_index_0057 (email, user_id) VALUES (?, ?) args=[huangdebao_2012@163.com 389043108517646336]
+2025/12/09 21:18:25 📧 [MOCK EMAIL] To: huangdebao_2012@163.com | Code: 9242
+2025/12/09 21:18:46 🧭 [UserRepoV2] EmailIndexLookup cluster=todo_user_db_4 shard=0057 table=user_email_index_0057 sql=SELECT user_id FROM user_email_index_0057 WHERE email = ? args=[huangdebao_2012@163.com]
+2025/12/09 21:18:46 🧭 [UserRepoV2] GetByID cluster=todo_user_db_15 shard=0026 table=users_0026 sql=SELECT user_id, email, password_hash, verification_code, is_verified, created_at FROM users_0026 WHERE user_id = ? args=[389043108517646336]
+2025/12/09 21:18:46 🧭 [UserRepoV2] EmailIndexLookup cluster=todo_user_db_4 shard=0057 table=user_email_index_0057 sql=SELECT user_id FROM user_email_index_0057 WHERE email = ? args=[huangdebao_2012@163.com]
+2025/12/09 21:18:46 🧭 [UserRepoV2] GetByID cluster=todo_user_db_15 shard=0026 table=users_0026 sql=SELECT user_id, email, password_hash, verification_code, is_verified, created_at FROM users_0026 WHERE user_id = ? args=[389043108517646336]
+2025/12/09 21:18:46 🧭 [UserRepoV2] UpdateVerification cluster=todo_user_db_15 shard=0026 table=users_0026 sql=UPDATE users_0026 SET is_verified = ? WHERE user_id = ? args=[true 389043108517646336]
+2025/12/09 21:20:32 🧭 [UserRepoV2] EmailIndexLookup cluster=todo_user_db_4 shard=0057 table=user_email_index_0057 sql=SELECT user_id FROM user_email_index_0057 WHERE email = ? args=[huangdebao_2012@163.com]
+2025/12/09 21:20:32 🧭 [UserRepoV2] GetByID cluster=todo_user_db_15 shard=0026 table=users_0026 sql=SELECT user_id, email, password_hash, verification_code, is_verified, created_at FROM users_0026 WHERE user_id = ? args=[389043108517646336]
+2025/12/09 21:20:32 📭 Cache MISS: user_lists:389043108517646336
+2025/12/09 21:20:32 🧭 [TodoRepoV2] ListIndexQuery cluster=todo_user_db_15 shard=0026 table=user_list_index_0026 sql=SELECT list_id, role FROM user_list_index_0026 WHERE user_id = ? args=[389043108517646336]
+2025/12/09 21:20:37 🎯 Cache HIT: user_lists:389043108517646336
+2025/12/09 21:20:42 🎯 Cache HIT: user_lists:389043108517646336
+2025/12/09 21:20:47 🎯 Cache HIT: user_lists:389043108517646336
+2025/12/09 21:20:52 🎯 Cache HIT: user_lists:389043108517646336
+2025/12/09 21:20:57 🎯 Cache HIT: user_lists:389043108517646336
+2025/12/09 21:21:02 🎯 Cache HIT: user_lists:389043108517646336
+2025/12/09 21:21:06 🧭 [TodoRepoV2] CreateList cluster=todo_data_db_25 shard=0030 table=todo_lists_tab_0030 sql=INSERT INTO todo_lists_tab_0030 (list_id, owner_id, title) VALUES (?, ?, ?) args=[389043786556252160 389043108517646336 test1]
+2025/12/09 21:21:06 🗄️ list insert success: list_id=389043786556252160 owner_id=389043108517646336 table=todo_lists_tab_0030 suffix=30
+2025/12/09 21:21:06 🧭 [TodoRepoV2] CreateListIndex cluster=todo_user_db_15 shard=0026 table=user_list_index_0026 sql=INSERT INTO user_list_index_0026 (user_id, list_id, role) VALUES (?, ?, ?) args=[389043108517646336 389043786556252160 OWNER]
+2025/12/09 21:21:06 ✅ index insert success: list_id=389043786556252160 owner_id=389043108517646336 idxTable=user_list_index_0026
+2025/12/09 21:21:06 📭 Cache MISS: user_lists:389043108517646336
+2025/12/09 21:21:06 🧭 [TodoRepoV2] ListIndexQuery cluster=todo_user_db_15 shard=0026 table=user_list_index_0026 sql=SELECT list_id, role FROM user_list_index_0026 WHERE user_id = ? args=[389043108517646336]
+2025/12/09 21:21:06 🧭 [TodoRepoV2] FetchList cluster=todo_data_db_25 shard=0030 table=todo_lists_tab_0030 sql=SELECT list_id, title, owner_id FROM todo_lists_tab_0030 WHERE list_id = ? args=[389043786556252160]
+2025/12/09 21:21:06 📭 Cache MISS: items:389043786556252160
+2025/12/09 21:21:06 🧭 [TodoRepoV2] GetItemsByListID cluster=todo_data_db_25 shard=0030 table=todo_items_tab_0030 sql=
+		SELECT item_id, list_id, content, name, description, status, priority, due_date, tags, is_done, created_at, updated_at
+		FROM todo_items_tab_0030 
+		WHERE list_id = ?
+		ORDER BY created_at DESC
+	 args=[389043786556252160]
+2025/12/09 21:21:07 🎯 Cache HIT: user_lists:389043108517646336
+2025/12/09 21:21:07 🎯 Cache HIT: items:389043786556252160
+2025/12/09 21:21:14 📥 [TodoHandler] CreateItemExtended request user=389043108517646336 list=389043786556252160
+2025/12/09 21:21:14 📦 [TodoHandler] CreateItemExtended payload user=389043108517646336 list=389043786556252160 item={ID:0 ListID:0 Name:34234 Description:3434 Content:34234 Status:in_progress Priority: DueDate:2025-12-09 00:00:00 +0000 UTC Tags: IsDone:false CreatedAt:0001-01-01 00:00:00 +0000 UTC UpdatedAt:0001-01-01 00:00:00 +0000 UTC}
+2025/12/09 21:21:14 📝 [TodoService] CreateItemExtended user=389043108517646336 list=389043786556252160 item=&{ID:0 ListID:0 Name:34234 Description:3434 Content:34234 Status:in_progress Priority: DueDate:2025-12-09 00:00:00 +0000 UTC Tags: IsDone:false CreatedAt:0001-01-01 00:00:00 +0000 UTC UpdatedAt:0001-01-01 00:00:00 +0000 UTC}
+2025/12/09 21:21:14 🧭 [TodoRepoV2] CreateItem cluster=todo_data_db_25 shard=0030 table=todo_items_tab_0030 sql=
+		INSERT INTO todo_items_tab_0030 (item_id, list_id, content, name, description, status, priority, due_date, tags, is_done) 
+		VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+	 args=[389043817581518848 389043786556252160 34234 34234 3434 in_progress medium 2025-12-09 00:00:00 +0000 UTC  false]
+2025/12/09 21:21:14 📭 Cache MISS: items:389043786556252160
+2025/12/09 21:21:14 🧭 [TodoRepoV2] GetItemsByListID cluster=todo_data_db_25 shard=0030 table=todo_items_tab_0030 sql=
+		SELECT item_id, list_id, content, name, description, status, priority, due_date, tags, is_done, created_at, updated_at
+		FROM todo_items_tab_0030 
+		WHERE list_id = ?
+		ORDER BY created_at DESC
+	 args=[389043786556252160]
+2025/12/09 21:21:43 🧭 [TodoRepoV2] GetListByID cluster=todo_data_db_25 shard=0030 table=todo_lists_tab_0030 sql=SELECT list_id, title, owner_id FROM todo_lists_tab_0030 WHERE list_id = ? args=[389043786556252160]
+2025/12/09 21:21:43 🧭 [UserRepoV2] EmailIndexLookup cluster=todo_user_db_7 shard=0039 table=user_email_index_0039 sql=SELECT user_id FROM user_email_index_0039 WHERE email = ? args=[huangdebao_2009@163.com]
+2025/12/09 21:21:43 🧭 [UserRepoV2] GetByID cluster=todo_user_db_0 shard=0058 table=users_0058 sql=SELECT user_id, email, password_hash, verification_code, is_verified, created_at FROM users_0058 WHERE user_id = ? args=[389031660848549888]
+2025/12/09 21:21:43 🧭 [TodoRepoV2] AddCollaborator cluster=todo_data_db_25 shard=0030 table=list_collaborators_tab_0030 sql=INSERT INTO list_collaborators_tab_0030 (list_id, user_id, role) VALUES (?, ?, ?) args=[389043786556252160 389031660848549888 EDITOR]
+2025/12/09 21:21:43 🧭 [TodoRepoV2] AddCollaboratorIndex cluster=todo_user_db_0 shard=0058 table=user_list_index_0058 sql=INSERT INTO user_list_index_0058 (user_id, list_id, role) VALUES (?, ?, ?) args=[389031660848549888 389043786556252160 EDITOR]
+2025/12/09 21:21:55 📭 Cache MISS: user_lists:389031660848549888
+2025/12/09 21:21:55 🧭 [TodoRepoV2] ListIndexQuery cluster=todo_user_db_0 shard=0058 table=user_list_index_0058 sql=SELECT list_id, role FROM user_list_index_0058 WHERE user_id = ? args=[389031660848549888]
+2025/12/09 21:21:55 🧭 [TodoRepoV2] FetchList cluster=todo_data_db_44 shard=0060 table=todo_lists_tab_0060 sql=SELECT list_id, title, owner_id FROM todo_lists_tab_0060 WHERE list_id = ? args=[389031776439377920]
+2025/12/09 21:21:55 🧭 [TodoRepoV2] FetchList cluster=todo_data_db_25 shard=0030 table=todo_lists_tab_0030 sql=SELECT list_id, title, owner_id FROM todo_lists_tab_0030 WHERE list_id = ? args=[389043786556252160]
+2025/12/09 21:21:55 📭 Cache MISS: items:389031776439377900
+2025/12/09 21:21:55 🧭 [TodoRepoV2] GetItemsByListID cluster=todo_data_db_3 shard=0045 table=todo_items_tab_0045 sql=
+		SELECT item_id, list_id, content, name, description, status, priority, due_date, tags, is_done, created_at, updated_at
+		FROM todo_items_tab_0045 
+		WHERE list_id = ?
+		ORDER BY created_at DESC
+	 args=[389031776439377900]
+2025/12/09 21:21:55 🎯 Cache HIT: items:389043786556252160
+2025/12/09 21:22:00 🎯 Cache HIT: user_lists:389031660848549888
+2025/12/09 21:22:00 🎯 Cache HIT: items:389031776439377900
+2025/12/09 21:22:00 🎯 Cache HIT: items:389043786556252160
+2025/12/09 21:22:05 🎯 Cache HIT: user_lists:389031660848549888
+2025/12/09 21:22:05 🎯 Cache HIT: items:389031776439377900
+2025/12/09 21:22:05 🎯 Cache HIT: items:389043786556252160
+2025/12/09 21:22:10 🎯 Cache HIT: user_lists:389031660848549888
+2025/12/09 21:22:10 🎯 Cache HIT: items:389031776439377900
+2025/12/09 21:22:10 🎯 Cache HIT: items:389043786556252160
+2025/12/09 21:22:15 🎯 Cache HIT: user_lists:389031660848549888
+2025/12/09 21:22:15 🎯 Cache HIT: items:389031776439377900
+2025/12/09 21:22:15 🎯 Cache HIT: items:389043786556252160
+2025/12/09 21:22:20 🎯 Cache HIT: user_lists:389031660848549888
+2025/12/09 21:22:20 🎯 Cache HIT: items:389031776439377900
+2025/12/09 21:22:20 🎯 Cache HIT: items:389043786556252160
+2025/12/09 21:22:25 🎯 Cache HIT: user_lists:389031660848549888
+2025/12/09 21:22:25 🎯 Cache HIT: items:389031776439377900
+2025/12/09 21:22:25 🎯 Cache HIT: items:389043786556252160
+2025/12/09 21:22:30 🎯 Cache HIT: user_lists:389031660848549888
+2025/12/09 21:22:30 🎯 Cache HIT: items:389031776439377900
+2025/12/09 21:22:30 🎯 Cache HIT: items:389043786556252160
+2025/12/09 21:22:35 🎯 Cache HIT: user_lists:389031660848549888
+2025/12/09 21:22:35 🎯 Cache HIT: items:389031776439377900
+2025/12/09 21:22:35 🎯 Cache HIT: items:389043786556252160
+2025/12/09 21:22:40 🎯 Cache HIT: user_lists:389031660848549888
+2025/12/09 21:22:40 🎯 Cache HIT: items:389031776439377900
+2025/12/09 21:22:40 🎯 Cache HIT: items:389043786556252160
+2025/12/09 21:22:45 🎯 Cache HIT: user_lists:389031660848549888
+2025/12/09 21:22:45 🎯 Cache HIT: items:389031776439377900
+2025/12/09 21:22:45 🎯 Cache HIT: items:389043786556252160
+2025/12/09 21:22:50 🎯 Cache HIT: user_lists:389031660848549888
+2025/12/09 21:22:50 🎯 Cache HIT: items:389031776439377900
+2025/12/09 21:22:50 🎯 Cache HIT: items:389043786556252160
+2025/12/09 21:22:55 🎯 Cache HIT: user_lists:389031660848549888
+2025/12/09 21:22:55 🎯 Cache HIT: items:389031776439377900
+2025/12/09 21:22:55 🎯 Cache HIT: items:389043786556252160
+2025/12/09 21:23:00 🎯 Cache HIT: user_lists:389031660848549888
+2025/12/09 21:23:00 🎯 Cache HIT: items:389031776439377900
+2025/12/09 21:23:00 🎯 Cache HIT: items:389043786556252160
+2025/12/09 21:23:05 🎯 Cache HIT: user_lists:389031660848549888
+2025/12/09 21:23:05 🎯 Cache HIT: items:389031776439377900
+2025/12/09 21:23:05 🎯 Cache HIT: items:389043786556252160
+2025/12/09 21:23:10 🎯 Cache HIT: user_lists:389031660848549888
+2025/12/09 21:23:10 🎯 Cache HIT: items:389031776439377900
+2025/12/09 21:23:10 🎯 Cache HIT: items:389043786556252160
+2025/12/09 21:23:15 🎯 Cache HIT: user_lists:389031660848549888
+2025/12/09 21:23:15 🎯 Cache HIT: items:389031776439377900
+2025/12/09 21:23:15 🎯 Cache HIT: items:389043786556252160
+2025/12/09 21:23:20 🎯 Cache HIT: user_lists:389031660848549888
+2025/12/09 21:23:20 🎯 Cache HIT: items:389031776439377900
+2025/12/09 21:23:20 🎯 Cache HIT: items:389043786556252160
+2025/12/09 21:23:25 🎯 Cache HIT: user_lists:389031660848549888
+2025/12/09 21:23:25 🎯 Cache HIT: items:389031776439377900
+2025/12/09 21:23:25 🎯 Cache HIT: items:389043786556252160
+2025/12/09 21:23:30 🎯 Cache HIT: user_lists:389031660848549888
+2025/12/09 21:23:30 🎯 Cache HIT: items:389031776439377900
+2025/12/09 21:23:30 🎯 Cache HIT: items:389043786556252160
+2025/12/09 21:23:35 🎯 Cache HIT: user_lists:389031660848549888
+2025/12/09 21:23:35 🎯 Cache HIT: items:389043786556252160
+2025/12/09 21:23:35 🎯 Cache HIT: items:389031776439377900
+2025/12/09 21:23:40 🎯 Cache HIT: user_lists:389031660848549888
+2025/12/09 21:23:40 🎯 Cache HIT: items:389031776439377900
+2025/12/09 21:23:40 🎯 Cache HIT: items:389043786556252160
+2025/12/09 21:23:45 🎯 Cache HIT: user_lists:389031660848549888
+2025/12/09 21:23:45 🎯 Cache HIT: items:389031776439377900
+2025/12/09 21:23:45 🎯 Cache HIT: items:389043786556252160
+2025/12/09 21:23:50 🎯 Cache HIT: user_lists:389031660848549888
+2025/12/09 21:23:50 🎯 Cache HIT: items:389031776439377900
+2025/12/09 21:23:50 🎯 Cache HIT: items:389043786556252160
+2025/12/09 21:23:55 🎯 Cache HIT: user_lists:389031660848549888
+2025/12/09 21:23:55 🎯 Cache HIT: items:389031776439377900
+2025/12/09 21:23:55 🎯 Cache HIT: items:389043786556252160
+2025/12/09 21:24:00 🎯 Cache HIT: user_lists:389031660848549888
+2025/12/09 21:24:00 🎯 Cache HIT: items:389031776439377900
+2025/12/09 21:24:00 🎯 Cache HIT: items:389043786556252160
+2025/12/09 21:24:05 🎯 Cache HIT: user_lists:389031660848549888
+2025/12/09 21:24:05 🎯 Cache HIT: items:389031776439377900
+2025/12/09 21:24:05 🎯 Cache HIT: items:389043786556252160
+2025/12/09 21:24:10 🎯 Cache HIT: user_lists:389031660848549888
+2025/12/09 21:24:10 🎯 Cache HIT: items:389031776439377900
+2025/12/09 21:24:10 🎯 Cache HIT: items:389043786556252160
+2025/12/09 21:24:15 🎯 Cache HIT: user_lists:389031660848549888
+2025/12/09 21:24:15 🎯 Cache HIT: items:389043786556252160
+2025/12/09 21:24:15 🎯 Cache HIT: items:389031776439377900
+2025/12/09 21:24:20 🎯 Cache HIT: user_lists:389031660848549888
+2025/12/09 21:24:20 🎯 Cache HIT: items:389031776439377900
+2025/12/09 21:24:20 🎯 Cache HIT: items:389043786556252160
+2025/12/09 21:24:25 🎯 Cache HIT: user_lists:389031660848549888
+2025/12/09 21:24:25 🎯 Cache HIT: items:389031776439377900
+2025/12/09 21:24:25 🎯 Cache HIT: items:389043786556252160
+2025/12/09 21:24:30 🎯 Cache HIT: user_lists:389031660848549888
+2025/12/09 21:24:30 🎯 Cache HIT: items:389031776439377900
+2025/12/09 21:24:30 🎯 Cache HIT: items:389043786556252160
+2025/12/09 21:24:35 🎯 Cache HIT: user_lists:389031660848549888
+2025/12/09 21:24:35 🎯 Cache HIT: items:389031776439377900
+2025/12/09 21:24:35 🎯 Cache HIT: items:389043786556252160
+2025/12/09 21:24:40 🎯 Cache HIT: user_lists:389031660848549888
+2025/12/09 21:24:40 🎯 Cache HIT: items:389031776439377900
+2025/12/09 21:24:40 🎯 Cache HIT: items:389043786556252160
+2025/12/09 21:24:45 🎯 Cache HIT: user_lists:389031660848549888
+2025/12/09 21:24:45 🎯 Cache HIT: items:389031776439377900
+2025/12/09 21:24:45 🎯 Cache HIT: items:389043786556252160
+2025/12/09 21:24:50 🎯 Cache HIT: user_lists:389031660848549888
+2025/12/09 21:24:50 🎯 Cache HIT: items:389031776439377900
+2025/12/09 21:24:50 🎯 Cache HIT: items:389043786556252160
+2025/12/09 21:24:55 🎯 Cache HIT: user_lists:389031660848549888
+2025/12/09 21:24:55 🎯 Cache HIT: items:389031776439377900
+2025/12/09 21:24:55 🎯 Cache HIT: items:389043786556252160
+2025/12/09 21:25:00 🎯 Cache HIT: user_lists:389031660848549888
+2025/12/09 21:25:00 🎯 Cache HIT: items:389031776439377900
+2025/12/09 21:25:00 🎯 Cache HIT: items:389043786556252160
+2025/12/09 21:25:05 🎯 Cache HIT: user_lists:389031660848549888
+2025/12/09 21:25:05 🎯 Cache HIT: items:389031776439377900
+2025/12/09 21:25:05 🎯 Cache HIT: items:389043786556252160
+2025/12/09 21:25:10 🎯 Cache HIT: user_lists:389031660848549888
+2025/12/09 21:25:10 🎯 Cache HIT: items:389043786556252160
+2025/12/09 21:25:10 🎯 Cache HIT: items:389031776439377900
+2025/12/09 21:25:15 🎯 Cache HIT: user_lists:389031660848549888
+2025/12/09 21:25:15 🎯 Cache HIT: items:389031776439377900
+2025/12/09 21:25:15 🎯 Cache HIT: items:389043786556252160
+2025/12/09 21:25:20 🎯 Cache HIT: user_lists:389031660848549888
+2025/12/09 21:25:20 🎯 Cache HIT: items:389031776439377900
+2025/12/09 21:25:20 🎯 Cache HIT: items:389043786556252160
+2025/12/09 21:25:25 🎯 Cache HIT: user_lists:389031660848549888
+2025/12/09 21:25:25 🎯 Cache HIT: items:389031776439377900
+2025/12/09 21:25:25 🎯 Cache HIT: items:389043786556252160
+2025/12/09 21:25:30 🎯 Cache HIT: user_lists:389031660848549888
+2025/12/09 21:25:30 🎯 Cache HIT: items:389031776439377900
+2025/12/09 21:25:30 🎯 Cache HIT: items:389043786556252160
+2025/12/09 21:25:35 🎯 Cache HIT: user_lists:389031660848549888
+2025/12/09 21:25:35 🎯 Cache HIT: items:389031776439377900
+2025/12/09 21:25:35 🎯 Cache HIT: items:389043786556252160
+2025/12/09 21:25:40 🎯 Cache HIT: user_lists:389031660848549888
+2025/12/09 21:25:40 🎯 Cache HIT: items:389031776439377900
+2025/12/09 21:25:40 🎯 Cache HIT: items:389043786556252160
+2025/12/09 21:25:45 🎯 Cache HIT: user_lists:389031660848549888
+2025/12/09 21:25:45 🎯 Cache HIT: items:389031776439377900
+2025/12/09 21:25:45 🎯 Cache HIT: items:389043786556252160
+2025/12/09 21:25:50 🎯 Cache HIT: user_lists:389031660848549888
+2025/12/09 21:25:50 🎯 Cache HIT: items:389031776439377900
+2025/12/09 21:25:50 🎯 Cache HIT: items:389043786556252160
+2025/12/09 21:25:55 🎯 Cache HIT: user_lists:389031660848549888
+2025/12/09 21:25:55 🎯 Cache HIT: items:389031776439377900
+2025/12/09 21:25:55 🎯 Cache HIT: items:389043786556252160
+2025/12/09 21:26:29 🎯 Cache HIT: user_lists:389031660848549888
+2025/12/09 21:26:29 🎯 Cache HIT: items:389031776439377900
+2025/12/09 21:26:29 📭 Cache MISS: items:389043786556252160
+2025/12/09 21:26:29 🧭 [TodoRepoV2] GetItemsByListID cluster=todo_data_db_25 shard=0030 table=todo_items_tab_0030 sql=
+		SELECT item_id, list_id, content, name, description, status, priority, due_date, tags, is_done, created_at, updated_at
+		FROM todo_items_tab_0030 
+		WHERE list_id = ?
+		ORDER BY created_at DESC
+	 args=[389043786556252160]
+2025/12/09 21:27:29 📭 Cache MISS: user_lists:389031660848549888
+2025/12/09 21:27:29 🧭 [TodoRepoV2] ListIndexQuery cluster=todo_user_db_0 shard=0058 table=user_list_index_0058 sql=SELECT list_id, role FROM user_list_index_0058 WHERE user_id = ? args=[389031660848549888]
+2025/12/09 21:27:29 🧭 [TodoRepoV2] FetchList cluster=todo_data_db_44 shard=0060 table=todo_lists_tab_0060 sql=SELECT list_id, title, owner_id FROM todo_lists_tab_0060 WHERE list_id = ? args=[389031776439377920]
+2025/12/09 21:27:29 🧭 [TodoRepoV2] FetchList cluster=todo_data_db_25 shard=0030 table=todo_lists_tab_0030 sql=SELECT list_id, title, owner_id FROM todo_lists_tab_0030 WHERE list_id = ? args=[389043786556252160]
+2025/12/09 21:27:29 📭 Cache MISS: items:389031776439377900
+2025/12/09 21:27:29 🧭 [TodoRepoV2] GetItemsByListID cluster=todo_data_db_3 shard=0045 table=todo_items_tab_0045 sql=
+		SELECT item_id, list_id, content, name, description, status, priority, due_date, tags, is_done, created_at, updated_at
+		FROM todo_items_tab_0045 
+		WHERE list_id = ?
+		ORDER BY created_at DESC
+	 args=[389031776439377900]
+2025/12/09 21:27:29 🎯 Cache HIT: items:389043786556252160
+2025/12/09 21:28:29 🎯 Cache HIT: user_lists:389031660848549888
+2025/12/09 21:28:29 🎯 Cache HIT: items:389031776439377900
+2025/12/09 21:28:29 🎯 Cache HIT: items:389043786556252160
+2025/12/09 21:29:29 🎯 Cache HIT: user_lists:389031660848549888
+2025/12/09 21:29:29 🎯 Cache HIT: items:389031776439377900
+2025/12/09 21:29:29 🎯 Cache HIT: items:389043786556252160
+2025/12/09 21:30:29 🎯 Cache HIT: user_lists:389031660848549888
+2025/12/09 21:30:29 🎯 Cache HIT: items:389031776439377900
+2025/12/09 21:30:29 🎯 Cache HIT: items:389043786556252160
+2025/12/09 21:31:29 🎯 Cache HIT: user_lists:389031660848549888
+2025/12/09 21:31:29 🎯 Cache HIT: items:389031776439377900
+2025/12/09 21:31:29 📭 Cache MISS: items:389043786556252160
+2025/12/09 21:31:29 🧭 [TodoRepoV2] GetItemsByListID cluster=todo_data_db_25 shard=0030 table=todo_items_tab_0030 sql=
+		SELECT item_id, list_id, content, name, description, status, priority, due_date, tags, is_done, created_at, updated_at
+		FROM todo_items_tab_0030 
+		WHERE list_id = ?
+		ORDER BY created_at DESC
+	 args=[389043786556252160]
+2025/12/09 21:32:29 🎯 Cache HIT: user_lists:389031660848549888
+2025/12/09 21:32:29 📭 Cache MISS: items:389031776439377900
+2025/12/09 21:32:29 🧭 [TodoRepoV2] GetItemsByListID cluster=todo_data_db_3 shard=0045 table=todo_items_tab_0045 sql=
+		SELECT item_id, list_id, content, name, description, status, priority, due_date, tags, is_done, created_at, updated_at
+		FROM todo_items_tab_0045 
+		WHERE list_id = ?
+		ORDER BY created_at DESC
+	 args=[389031776439377900]
+2025/12/09 21:32:29 🎯 Cache HIT: items:389043786556252160
+2025/12/09 21:33:29 📭 Cache MISS: user_lists:389031660848549888
+2025/12/09 21:33:29 🧭 [TodoRepoV2] ListIndexQuery cluster=todo_user_db_0 shard=0058 table=user_list_index_0058 sql=SELECT list_id, role FROM user_list_index_0058 WHERE user_id = ? args=[389031660848549888]
+2025/12/09 21:33:29 🧭 [TodoRepoV2] FetchList cluster=todo_data_db_44 shard=0060 table=todo_lists_tab_0060 sql=SELECT list_id, title, owner_id FROM todo_lists_tab_0060 WHERE list_id = ? args=[389031776439377920]
+2025/12/09 21:33:29 🧭 [TodoRepoV2] FetchList cluster=todo_data_db_25 shard=0030 table=todo_lists_tab_0030 sql=SELECT list_id, title, owner_id FROM todo_lists_tab_0030 WHERE list_id = ? args=[389043786556252160]
+2025/12/09 21:33:29 🎯 Cache HIT: items:389031776439377900
+2025/12/09 21:33:29 🎯 Cache HIT: items:389043786556252160
+2025/12/09 21:34:29 🎯 Cache HIT: user_lists:389031660848549888
+2025/12/09 21:34:29 🎯 Cache HIT: items:389031776439377900
+2025/12/09 21:34:29 🎯 Cache HIT: items:389043786556252160
+2025/12/09 21:35:29 🎯 Cache HIT: user_lists:389031660848549888
+2025/12/09 21:35:29 🎯 Cache HIT: items:389031776439377900
+2025/12/09 21:35:29 🎯 Cache HIT: items:389043786556252160
+2025/12/09 21:36:29 🎯 Cache HIT: user_lists:389031660848549888
+2025/12/09 21:36:29 🎯 Cache HIT: items:389031776439377900
+2025/12/09 21:36:29 📭 Cache MISS: items:389043786556252160
+2025/12/09 21:36:29 🧭 [TodoRepoV2] GetItemsByListID cluster=todo_data_db_25 shard=0030 table=todo_items_tab_0030 sql=
+		SELECT item_id, list_id, content, name, description, status, priority, due_date, tags, is_done, created_at, updated_at
+		FROM todo_items_tab_0030 
+		WHERE list_id = ?
+		ORDER BY created_at DESC
+	 args=[389043786556252160]
+2025/12/09 21:37:29 🎯 Cache HIT: user_lists:389031660848549888
+2025/12/09 21:37:29 📭 Cache MISS: items:389031776439377900
+2025/12/09 21:37:29 🧭 [TodoRepoV2] GetItemsByListID cluster=todo_data_db_3 shard=0045 table=todo_items_tab_0045 sql=
+		SELECT item_id, list_id, content, name, description, status, priority, due_date, tags, is_done, created_at, updated_at
+		FROM todo_items_tab_0045 
+		WHERE list_id = ?
+		ORDER BY created_at DESC
+	 args=[389031776439377900]
+2025/12/09 21:37:29 🎯 Cache HIT: items:389043786556252160
+2025/12/09 21:38:29 📭 Cache MISS: user_lists:389031660848549888
+2025/12/09 21:38:29 🧭 [TodoRepoV2] ListIndexQuery cluster=todo_user_db_0 shard=0058 table=user_list_index_0058 sql=SELECT list_id, role FROM user_list_index_0058 WHERE user_id = ? args=[389031660848549888]
+2025/12/09 21:38:29 🧭 [TodoRepoV2] FetchList cluster=todo_data_db_44 shard=0060 table=todo_lists_tab_0060 sql=SELECT list_id, title, owner_id FROM todo_lists_tab_0060 WHERE list_id = ? args=[389031776439377920]
+2025/12/09 21:38:29 🧭 [TodoRepoV2] FetchList cluster=todo_data_db_25 shard=0030 table=todo_lists_tab_0030 sql=SELECT list_id, title, owner_id FROM todo_lists_tab_0030 WHERE list_id = ? args=[389043786556252160]
+2025/12/09 21:38:29 🎯 Cache HIT: items:389031776439377900
+2025/12/09 21:38:29 🎯 Cache HIT: items:389043786556252160
+2025/12/09 21:39:29 🎯 Cache HIT: user_lists:389031660848549888
+2025/12/09 21:39:29 🎯 Cache HIT: items:389031776439377900
+2025/12/09 21:39:29 🎯 Cache HIT: items:389043786556252160

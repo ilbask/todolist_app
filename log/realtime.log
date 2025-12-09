@@ -1,0 +1,4 @@
+2025/12/09 21:10:06 ✅ realtime connected to redis localhost:6379
+2025/12/09 21:10:06 🚀 realtime server listening on :8091 (max per list: 500)
+2025/12/09 21:10:06 server failed: listen tcp :8091: bind: address already in use
+exit status 1
