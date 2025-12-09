@@ -1,0 +1,725 @@
+{
+	"info": {
+		"_postman_id": "todolist-app-v2",
+		"name": "TodoList App API (v2 Extended)",
+		"description": "完整的TodoList应用API集合，包含基础功能和扩展功能\n\n特性：\n- 用户注册/登录/验证\n- CRUD操作（List & Item）\n- 多人协作（分享）\n- CAPTCHA验证\n- 媒体上传\n- 扩展Todo功能（状态、优先级、标签、筛选、排序）",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"auth": {
+		"type": "bearer",
+		"bearer": [
+			{
+				"key": "token",
+				"value": "{{user_id}}",
+				"type": "string"
+			}
+		]
+	},
+	"variable": [
+		{
+			"key": "base_url",
+			"value": "http://localhost:8080/api",
+			"type": "string"
+		},
+		{
+			"key": "user_id",
+			"value": "",
+			"type": "string"
+		},
+		{
+			"key": "list_id",
+			"value": "",
+			"type": "string"
+		},
+		{
+			"key": "item_id",
+			"value": "",
+			"type": "string"
+		},
+		{
+			"key": "email",
+			"value": "test@example.com",
+			"type": "string"
+		},
+		{
+			"key": "password",
+			"value": "password123",
+			"type": "string"
+		}
+	],
+	"item": [
+		{
+			"name": "1️⃣ Authentication",
+			"item": [
+				{
+					"name": "Register",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"// 自动提取user_id",
+									"if (pm.response.code === 200) {",
+									"    var jsonData = pm.response.json();",
+									"    pm.collectionVariables.set(\"user_id\", jsonData.user_id);",
+									"    console.log(\"User ID:\", jsonData.user_id);",
+									"}"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"email\": \"{{email}}\",\n  \"password\": \"{{password}}\"\n}"
+						},
+						"url": {
+							"raw": "{{base_url}}/auth/register",
+							"host": ["{{base_url}}"],
+							"path": ["auth", "register"]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Verify Email",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"email\": \"{{email}}\",\n  \"code\": \"{{verification_code}}\"\n}"
+						},
+						"url": {
+							"raw": "{{base_url}}/auth/verify",
+							"host": ["{{base_url}}"],
+							"path": ["auth", "verify"]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Login",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"// 自动提取user_id",
+									"if (pm.response.code === 200) {",
+									"    var jsonData = pm.response.json();",
+									"    pm.collectionVariables.set(\"user_id\", jsonData.user_id);",
+									"    console.log(\"Logged in as User ID:\", jsonData.user_id);",
+									"}"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"email\": \"{{email}}\",\n  \"password\": \"{{password}}\"\n}"
+						},
+						"url": {
+							"raw": "{{base_url}}/auth/login",
+							"host": ["{{base_url}}"],
+							"path": ["auth", "login"]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "2️⃣ CAPTCHA",
+			"item": [
+				{
+					"name": "Generate CAPTCHA",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"if (pm.response.code === 200) {",
+									"    var jsonData = pm.response.json();",
+									"    pm.collectionVariables.set(\"captcha_id\", jsonData.captcha_id);",
+									"}"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/captcha/generate",
+							"host": ["{{base_url}}"],
+							"path": ["captcha", "generate"]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get CAPTCHA Image",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/captcha/image/{{captcha_id}}",
+							"host": ["{{base_url}}"],
+							"path": ["captcha", "image", "{{captcha_id}}"]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Verify CAPTCHA",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"captcha_id\": \"{{captcha_id}}\",\n  \"answer\": \"your_answer\"\n}"
+						},
+						"url": {
+							"raw": "{{base_url}}/captcha/verify",
+							"host": ["{{base_url}}"],
+							"path": ["captcha", "verify"]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "3️⃣ Todo Lists",
+			"item": [
+				{
+					"name": "Get All Lists",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{user_id}}"
+							}
+						],
+						"url": {
+							"raw": "{{base_url}}/lists",
+							"host": ["{{base_url}}"],
+							"path": ["lists"]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create List",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"if (pm.response.code === 200) {",
+									"    var jsonData = pm.response.json();",
+									"    pm.collectionVariables.set(\"list_id\", jsonData.id);",
+									"    console.log(\"Created List ID:\", jsonData.id);",
+									"}"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{user_id}}"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"title\": \"我的第一个Todo清单\"\n}"
+						},
+						"url": {
+							"raw": "{{base_url}}/lists",
+							"host": ["{{base_url}}"],
+							"path": ["lists"]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete List",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{user_id}}"
+							}
+						],
+						"url": {
+							"raw": "{{base_url}}/lists/{{list_id}}",
+							"host": ["{{base_url}}"],
+							"path": ["lists", "{{list_id}}"]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Share List",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{user_id}}"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"email\": \"friend@example.com\",\n  \"role\": \"EDITOR\"\n}"
+						},
+						"url": {
+							"raw": "{{base_url}}/lists/{{list_id}}/share",
+							"host": ["{{base_url}}"],
+							"path": ["lists", "{{list_id}}", "share"]
+						},
+						"description": "分享给其他用户，role可选：OWNER, EDITOR, VIEWER"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "4️⃣ Todo Items (Basic API)",
+			"item": [
+				{
+					"name": "Get All Items",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{user_id}}"
+							}
+						],
+						"url": {
+							"raw": "{{base_url}}/lists/{{list_id}}/items",
+							"host": ["{{base_url}}"],
+							"path": ["lists", "{{list_id}}", "items"]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add Item (Simple)",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"if (pm.response.code === 200) {",
+									"    var jsonData = pm.response.json();",
+									"    pm.collectionVariables.set(\"item_id\", jsonData.id);",
+									"}"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{user_id}}"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"content\": \"买牛奶\"\n}"
+						},
+						"url": {
+							"raw": "{{base_url}}/lists/{{list_id}}/items",
+							"host": ["{{base_url}}"],
+							"path": ["lists", "{{list_id}}", "items"]
+						},
+						"description": "基础API - 只支持content字段"
+					},
+					"response": []
+				},
+				{
+					"name": "Update Item (Simple)",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{user_id}}"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"list_id\": {{list_id}},\n  \"is_done\": true\n}"
+						},
+						"url": {
+							"raw": "{{base_url}}/items/{{item_id}}",
+							"host": ["{{base_url}}"],
+							"path": ["items", "{{item_id}}"]
+						},
+						"description": "基础API - 只支持更新is_done状态"
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Item",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{user_id}}"
+							}
+						],
+						"url": {
+							"raw": "{{base_url}}/items/{{item_id}}?list_id={{list_id}}",
+							"host": ["{{base_url}}"],
+							"path": ["items", "{{item_id}}"],
+							"query": [
+								{
+									"key": "list_id",
+									"value": "{{list_id}}"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "5️⃣ Todo Items (Extended API v2) ⭐",
+			"item": [
+				{
+					"name": "Create Item Extended",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"if (pm.response.code === 200) {",
+									"    var jsonData = pm.response.json();",
+									"    pm.collectionVariables.set(\"item_id\", jsonData.id);",
+									"    console.log(\"Created Extended Item ID:\", jsonData.id);",
+									"}"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{user_id}}"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"name\": \"完成项目报告\",\n  \"description\": \"包含Q4所有数据分析、图表和市场对比分析\",\n  \"status\": \"not_started\",\n  \"priority\": \"high\",\n  \"due_date\": \"2025-12-31T23:59:59Z\",\n  \"tags\": \"work,urgent,Q4,report\"\n}"
+						},
+						"url": {
+							"raw": "{{base_url}}/lists/{{list_id}}/items/extended",
+							"host": ["{{base_url}}"],
+							"path": ["lists", "{{list_id}}", "items", "extended"]
+						},
+						"description": "✨ 扩展API - 支持所有新字段\n\n字段说明：\n- name: 任务名称（必填）\n- description: 详细描述\n- status: not_started | in_progress | completed\n- priority: high | medium | low\n- due_date: ISO 8601格式\n- tags: 逗号分隔的标签字符串"
+					},
+					"response": []
+				},
+				{
+					"name": "Update Item Extended",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{user_id}}"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"list_id\": {{list_id}},\n  \"name\": \"完成项目报告 [已修订]\",\n  \"description\": \"包含Q4所有数据分析、图表和市场对比分析，新增竞品分析章节\",\n  \"status\": \"in_progress\",\n  \"priority\": \"high\",\n  \"due_date\": \"2025-12-31T23:59:59Z\",\n  \"tags\": \"work,urgent,Q4,report,revised\",\n  \"is_done\": false\n}"
+						},
+						"url": {
+							"raw": "{{base_url}}/items/{{item_id}}/extended",
+							"host": ["{{base_url}}"],
+							"path": ["items", "{{item_id}}", "extended"]
+						},
+						"description": "✨ 扩展API - 更新所有字段"
+					},
+					"response": []
+				},
+				{
+					"name": "Get Items - Filter by Priority (High)",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{user_id}}"
+							}
+						],
+						"url": {
+							"raw": "{{base_url}}/lists/{{list_id}}/items/filtered?priority=high",
+							"host": ["{{base_url}}"],
+							"path": ["lists", "{{list_id}}", "items", "filtered"],
+							"query": [
+								{
+									"key": "priority",
+									"value": "high"
+								}
+							]
+						},
+						"description": "筛选高优先级任务"
+					},
+					"response": []
+				},
+				{
+					"name": "Get Items - Filter by Status (In Progress)",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{user_id}}"
+							}
+						],
+						"url": {
+							"raw": "{{base_url}}/lists/{{list_id}}/items/filtered?status=in_progress",
+							"host": ["{{base_url}}"],
+							"path": ["lists", "{{list_id}}", "items", "filtered"],
+							"query": [
+								{
+									"key": "status",
+									"value": "in_progress"
+								}
+							]
+						},
+						"description": "筛选进行中的任务"
+					},
+					"response": []
+				},
+				{
+					"name": "Get Items - Sort by Due Date",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{user_id}}"
+							}
+						],
+						"url": {
+							"raw": "{{base_url}}/lists/{{list_id}}/items/filtered?sort=due_date",
+							"host": ["{{base_url}}"],
+							"path": ["lists", "{{list_id}}", "items", "filtered"],
+							"query": [
+								{
+									"key": "sort",
+									"value": "due_date"
+								}
+							]
+						},
+						"description": "按截止日期升序排列"
+					},
+					"response": []
+				},
+				{
+					"name": "Get Items - Filter + Sort (High Priority, Due Date Desc)",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{user_id}}"
+							}
+						],
+						"url": {
+							"raw": "{{base_url}}/lists/{{list_id}}/items/filtered?priority=high&status=in_progress&sort=due_date&order=desc",
+							"host": ["{{base_url}}"],
+							"path": ["lists", "{{list_id}}", "items", "filtered"],
+							"query": [
+								{
+									"key": "priority",
+									"value": "high"
+								},
+								{
+									"key": "status",
+									"value": "in_progress"
+								},
+								{
+									"key": "sort",
+									"value": "due_date"
+								},
+								{
+									"key": "order",
+									"value": "desc"
+								}
+							]
+						},
+						"description": "组合筛选：高优先级 + 进行中 + 按截止日期降序"
+					},
+					"response": []
+				},
+				{
+					"name": "Get Items - Filter by Date Range",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{user_id}}"
+							}
+						],
+						"url": {
+							"raw": "{{base_url}}/lists/{{list_id}}/items/filtered?due_after=2025-12-01&due_before=2025-12-31",
+							"host": ["{{base_url}}"],
+							"path": ["lists", "{{list_id}}", "items", "filtered"],
+							"query": [
+								{
+									"key": "due_after",
+									"value": "2025-12-01"
+								},
+								{
+									"key": "due_before",
+									"value": "2025-12-31"
+								}
+							]
+						},
+						"description": "筛选本月到期的任务"
+					},
+					"response": []
+				},
+				{
+					"name": "Get Items - Filter by Tags",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{user_id}}"
+							}
+						],
+						"url": {
+							"raw": "{{base_url}}/lists/{{list_id}}/items/filtered?tags=work&tags=urgent",
+							"host": ["{{base_url}}"],
+							"path": ["lists", "{{list_id}}", "items", "filtered"],
+							"query": [
+								{
+									"key": "tags",
+									"value": "work"
+								},
+								{
+									"key": "tags",
+									"value": "urgent"
+								}
+							]
+						},
+						"description": "筛选包含work或urgent标签的任务"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "6️⃣ Media Upload",
+			"item": [
+				{
+					"name": "Upload Image/Video",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{user_id}}"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "file",
+									"type": "file",
+									"src": []
+								}
+							]
+						},
+						"url": {
+							"raw": "{{base_url}}/media/upload",
+							"host": ["{{base_url}}"],
+							"path": ["media", "upload"]
+						},
+						"description": "上传图片或视频文件（通过Kafka异步处理到S3）"
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
+

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TodoList Demo</title>
+    <style>
+        body { font-family: sans-serif; max-width: 800px; margin: 0 auto; padding: 20px; }
+        .hidden { display: none; }
+        .card { border: 1px solid #ccc; padding: 15px; margin-bottom: 10px; border-radius: 5px; }
+        .btn { padding: 5px 10px; cursor: pointer; }
+        .btn-red { background-color: #ffcccc; }
+        .input-group { margin-bottom: 10px; }
+        label { display: block; margin-bottom: 5px; }
+        input { padding: 5px; width: 100%; box-sizing: border-box; }
+        .flex { display: flex; justify-content: space-between; align-items: center; }
+        .completed { text-decoration: line-through; color: #888; }
+    </style>
+</head>
+<body>
+    <h1>TodoList App Demo</h1>
+
+    <!-- Auth Section -->
+    <div id="auth-section">
+        <div class="card">
+            <h3>Login</h3>
+            <div class="input-group">
+                <input type="email" id="login-email" placeholder="Email">
+            </div>
+            <div class="input-group">
+                <input type="password" id="login-password" placeholder="Password">
+            </div>
+            <button class="btn" onclick="login()">Login</button>
+        </div>
+
+        <div class="card">
+            <h3>Register</h3>
+            <div class="input-group">
+                <input type="email" id="reg-email" placeholder="Email">
+            </div>
+            <div class="input-group">
+                <input type="password" id="reg-password" placeholder="Password">
+            </div>
+            <button class="btn" onclick="register()">Send Verification Code</button>
+            
+            <div id="verify-box" class="hidden" style="margin-top: 10px; border-top: 1px dashed #ccc; padding-top: 10px;">
+                <p id="demo-code-display" style="color: red; font-weight: bold;"></p>
+                <div class="input-group">
+                    <input type="text" id="verify-code" placeholder="Verification Code">
+                </div>
+                <button class="btn" onclick="verify()">Verify & Register</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- App Section -->
+    <div id="app-section" class="hidden">
+        <div class="flex">
+            <h3>My Lists</h3>
+            <button class="btn" onclick="logout()">Logout</button>
+        </div>
+        <p>Logged in as: <span id="current-user"></span> (ID: <span id="current-user-id"></span>)</p>
+
+        <div class="card">
+            <div class="flex">
+                <input type="text" id="new-list-title" placeholder="New List Title" style="width: 70%;">
+                <button class="btn" onclick="createList()">Create List</button>
+            </div>
+        </div>
+
+        <div id="lists-container">
+            <!-- Lists will be rendered here -->
+        </div>
+    </div>
+
+    <!-- Modal for Sharing -->
+    <div id="share-modal" class="hidden" style="position:fixed; top:20%; left:30%; background:white; border:2px solid #333; padding:20px; z-index:100;">
+        <h3>Share List</h3>
+        <input type="hidden" id="share-list-id">
+        <div class="input-group">
+            <input type="email" id="share-email" placeholder="Target User Email">
+        </div>
+        <div class="input-group">
+            <select id="share-role" style="width:100%; padding:5px;">
+                <option value="EDITOR">Editor</option>
+                <option value="VIEWER">Viewer</option>
+            </select>
+        </div>
+        <button class="btn" onclick="submitShare()">Share</button>
+        <button class="btn btn-red" onclick="closeShare()">Cancel</button>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,7 @@
+🔨 Building application...
+✅ Build successful!
+🚀 Starting todo_app...
+2025/12/08 17:51:37 ✅ Connected to MySQL Database
+2025/12/08 17:51:37 📧 Email Service running in Mock/Console mode
+2025/12/08 17:51:37 🚀 TodoList App running on :8080
+2025/12/08 17:51:37 💾 Database: MySQL

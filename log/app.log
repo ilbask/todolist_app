@@ -1,0 +1,86 @@
+2025/12/08 17:45:59 ⏳ Waiting for MySQL (127.0.0.1:3306)... (1/10) Error: Error 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+2025/12/08 17:46:00 ⏳ Waiting for MySQL (127.0.0.1:3306)... (2/10) Error: Error 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+2025/12/08 17:46:01 ⏳ Waiting for MySQL (127.0.0.1:3306)... (3/10) Error: Error 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+2025/12/08 17:46:02 ⏳ Waiting for MySQL (127.0.0.1:3306)... (4/10) Error: Error 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+2025/12/08 17:46:03 ⏳ Waiting for MySQL (127.0.0.1:3306)... (5/10) Error: Error 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+2025/12/08 17:46:04 ⏳ Waiting for MySQL (127.0.0.1:3306)... (6/10) Error: Error 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+2025/12/08 17:46:05 ⏳ Waiting for MySQL (127.0.0.1:3306)... (7/10) Error: Error 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+2025/12/08 17:46:06 ⏳ Waiting for MySQL (127.0.0.1:3306)... (8/10) Error: Error 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+2025/12/08 17:46:07 ⏳ Waiting for MySQL (127.0.0.1:3306)... (9/10) Error: Error 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+2025/12/08 17:46:08 ⏳ Waiting for MySQL (127.0.0.1:3306)... (10/10) Error: Error 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+2025/12/08 17:46:09 ⚠️ Failed to connect to MySQL. Falling back to SQLite for demo?
+2025/12/08 17:46:09 failed to connect to mysql: Error 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+2025/12/08 17:47:14 ⏳ Waiting for MySQL (127.0.0.1:3306)... (1/10) Error: Error 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+2025/12/08 17:47:15 ⏳ Waiting for MySQL (127.0.0.1:3306)... (2/10) Error: Error 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+2025/12/08 17:47:16 ⏳ Waiting for MySQL (127.0.0.1:3306)... (3/10) Error: Error 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+2025/12/08 17:47:17 ⏳ Waiting for MySQL (127.0.0.1:3306)... (4/10) Error: Error 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+2025/12/08 17:47:18 ⏳ Waiting for MySQL (127.0.0.1:3306)... (5/10) Error: Error 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+2025/12/08 17:47:19 ⏳ Waiting for MySQL (127.0.0.1:3306)... (6/10) Error: Error 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+2025/12/08 17:47:20 ⏳ Waiting for MySQL (127.0.0.1:3306)... (7/10) Error: Error 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+2025/12/08 17:47:21 ⏳ Waiting for MySQL (127.0.0.1:3306)... (8/10) Error: Error 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+2025/12/08 17:47:22 ⏳ Waiting for MySQL (127.0.0.1:3306)... (9/10) Error: Error 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+2025/12/08 17:47:23 ⏳ Waiting for MySQL (127.0.0.1:3306)... (10/10) Error: Error 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+2025/12/08 17:47:24 ⚠️ Failed to connect to MySQL. Falling back to SQLite for demo?
+2025/12/08 17:47:24 failed to connect to mysql: Error 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+2025/12/08 17:51:01 ✅ Connected to MySQL Database
+2025/12/08 17:51:01 📧 Email Service running in Mock/Console mode
+2025/12/08 17:51:01 🚀 TodoList App running on :8080
+2025/12/08 17:51:01 💾 Database: MySQL
+2025/12/08 17:51:37 ✅ Connected to MySQL Database
+2025/12/08 17:51:37 📧 Email Service running in Mock/Console mode
+2025/12/08 17:51:37 🚀 TodoList App running on :8080
+2025/12/08 17:51:37 💾 Database: MySQL
+2025/12/08 17:56:57 ✅ Connected to MySQL Database
+2025/12/08 17:56:57 📧 Email Service running in Mock/Console mode
+2025/12/08 17:56:57 🚀 TodoList App running on :8080
+2025/12/08 17:56:57 💾 Database: MySQL
+2025/12/08 17:59:16 ✅ Connected to MySQL Database
+2025/12/08 17:59:16 📧 Email Service running in Mock/Console mode
+2025/12/08 17:59:16 🚀 TodoList App running on :8080
+2025/12/08 17:59:16 💾 Database: MySQL
+2025/12/08 18:05:55 ✅ Connected to MySQL Database
+2025/12/08 18:05:55 📧 Email Service running in Mock/Console mode
+2025/12/08 18:05:55 🚀 TodoList App running on :8080
+2025/12/08 18:05:55 💾 Database: MySQL
+2025/12/08 18:06:30 📝 [Register] Attempting registration for Email: huangdebao_2025@163.com, Password: 115116
+2025/12/08 18:06:39 📝 [Register] Attempting registration for Email: huangdebao_2025@163.com, Password: 115116
+2025/12/08 18:07:26 📝 [Register] Attempting registration for Email: huangdebao_2009@163.com, Password: 
+2025/12/08 18:13:18 ✅ Connected to MySQL Database
+2025/12/08 18:13:18 📧 Email Service running in Mock/Console mode
+2025/12/08 18:13:18 🚀 TodoList App running on :8080
+2025/12/08 18:13:18 💾 Database: MySQL
+2025/12/08 18:13:36 📝 [Register] Attempting registration for Email: huangdebao_2009@163.com, Password: 
+2025/12/08 18:16:23 📝 [Register] Attempting registration for Email: debug@example.com, Password: debug_password
+2025/12/08 18:19:06 ✅ Connected to MySQL Database
+2025/12/08 18:19:06 📧 Email Service running in Mock/Console mode
+2025/12/08 18:19:06 🚀 TodoList App running on :8080
+2025/12/08 18:19:06 💾 Database: MySQL
+2025/12/08 18:19:23 📝 [Register] Attempting registration for Email: huangdebao_2009@163.com, Password: 
+2025/12/08 18:21:02 ✅ Connected to MySQL Database
+2025/12/08 18:21:02 📧 Email Service running in Mock/Console mode
+2025/12/08 18:21:02 🚀 TodoList App running on :8080
+2025/12/08 18:21:02 💾 Database: MySQL
+2025/12/08 18:21:27 📝 [Register] Attempting registration for Email: huangdebao_2010@163.com, Password: 123456
+2025/12/08 18:31:43 ✅ Connected to MySQL Database
+2025/12/08 18:31:43 📧 Email Service running in Mock/Console mode
+2025/12/08 18:31:43 🚀 TodoList App running on :8080
+2025/12/08 18:31:43 💾 Database: MySQL
+2025/12/08 21:56:57 ✅ Sharding Router V2 Initialized
+2025/12/08 21:56:57 🚀 TodoList App running on :8080 (Sharded Architecture V4)
+2025/12/08 22:15:24 ✅ Sharding Router V2 Initialized
+2025/12/08 22:15:24 🚀 TodoList App running on :8080 (Sharded Architecture V4)
+2025/12/08 22:19:24 ✅ Sharding Router V2 Initialized
+2025/12/08 22:19:24 🚀 TodoList App running on :8080 (Sharded Architecture V4)
+2025/12/08 22:23:00 ✅ Sharding Router V2 Initialized
+2025/12/08 22:23:00 🚀 TodoList App running on :8080 (Sharded Architecture V4)
+2025/12/08 22:46:31 ✅ Sharding Router V2 Initialized
+2025/12/08 22:46:31 🚀 TodoList App running on :8080 (Sharded Architecture V4)
+2025/12/08 23:13:49 ✅ Sharding Router V2 Initialized
+2025/12/08 23:13:51 ⚠️ Redis connection failed: dial tcp [::1]:6379: connect: connection refused. Caching will be disabled.
+2025/12/08 23:13:51 ⚠️ Failed to create Kafka producer: kafka: client has run out of available brokers to talk to: dial tcp [::1]:9092: connect: connection refused. Media uploads will be disabled.
+2025/12/08 23:13:51 🚀 TodoList App running on :8080
+2025/12/08 23:13:51 ✨ Features: Sharding, Redis Cache, CAPTCHA, Media Upload (Kafka)
+2025/12/08 23:15:47 📝 [Register] Attempting registration for Email: huangdebao_2009@163.com, Password: 115119_hH
+2025/12/08 23:15:48 📧 [MOCK EMAIL] To: huangdebao_2009@163.com | Code: 4146
+2025/12/08 23:19:46 📝 [Register] Attempting registration for Email: huangdebao_2010@163.com, Password: 123456
+2025/12/08 23:19:46 📧 [MOCK EMAIL] To: huangdebao_2010@163.com | Code: 1792
