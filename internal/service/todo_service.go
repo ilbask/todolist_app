@@ -2,6 +2,7 @@ package service
 
 import (
 	"errors"
+	"log"
 	"todolist-app/internal/domain"
 	"todolist-app/internal/infrastructure"
 )
@@ -12,6 +13,7 @@ type todoService struct {
 	kafka    *infrastructure.KafkaProducer
 }
 
+// NewTodoService wires the repositories and optional kafka producer into a todoService.
 func NewTodoService(repo domain.TodoRepository, userRepo domain.UserRepository, kafka *infrastructure.KafkaProducer) domain.TodoService {
 	return &todoService{repo: repo, userRepo: userRepo, kafka: kafka}
 }
@@ -65,36 +67,38 @@ func (s *todoService) ShareList(ownerID, listID int64, targetEmail string, role 
 
 	// 4. Async Notification (Kafka)
 	s.kafka.Publish("list.shared", []byte(targetEmail))
-	
+
 	return nil
 }
 
 func (s *todoService) AddItem(userID, listID int64, content string) (*domain.TodoItem, error) {
 	// TODO: Check permissions (is owner or collaborator)
-	
+
 	item := &domain.TodoItem{
-		ListID:  listID,
-		Content: content,
-		Name:    content, // 默认使用content作为name（向后兼容）
-		IsDone:  false,
-		Status:  domain.StatusNotStarted,
+		ListID:   listID,
+		Content:  content,
+		Name:     content, // 默认使用content作为name（向后兼容）
+		IsDone:   false,
+		Status:   domain.StatusNotStarted,
 		Priority: domain.PriorityMedium,
 	}
 	if err := s.repo.CreateItem(item); err != nil {
+		log.Printf("❌ [TodoService] CreateItem failed list=%d err=%v", item.ListID, err)
 		return nil, err
 	}
-	
+
 	// Real-time Push (via Kafka/Redis to WS Hub)
 	// Here we assume the WS hub subscribes to this topic
 	s.kafka.Publish("item.created", []byte(content))
-	
+
 	return item, nil
 }
 
 // CreateItemExtended 创建扩展item
 func (s *todoService) CreateItemExtended(userID, listID int64, item *domain.TodoItem) (*domain.TodoItem, error) {
 	// TODO: Check permissions (is owner or collaborator)
-	
+
+	log.Printf("📝 [TodoService] CreateItemExtended user=%d list=%d item=%+v", userID, listID, item)
 	item.ListID = listID
 	if item.Status == "" {
 		item.Status = domain.StatusNotStarted
@@ -102,14 +106,14 @@ func (s *todoService) CreateItemExtended(userID, listID int64, item *domain.Todo
 	if item.Priority == "" {
 		item.Priority = domain.PriorityMedium
 	}
-	
+
 	if err := s.repo.CreateItem(item); err != nil {
 		return nil, err
 	}
-	
+
 	// Real-time Push
 	s.kafka.Publish("item.created", []byte(item.Name))
-	
+
 	return item, nil
 }
 
@@ -136,10 +140,10 @@ func (s *todoService) UpdateItemExtended(userID, listID int64, item *domain.Todo
 	if err := s.repo.UpdateItemWithListID(listID, item); err != nil {
 		return nil, err
 	}
-	
+
 	// Real-time Push
 	s.kafka.Publish("item.updated", []byte(item.Name))
-	
+
 	return item, nil
 }
 

@@ -2,6 +2,8 @@ package handler
 
 import (
 	"encoding/json"
+	"fmt"
+	"log"
 	"net/http"
 	"strconv"
 	"time"
@@ -10,14 +12,17 @@ import (
 	"github.com/go-chi/chi/v5"
 )
 
+// TodoHandler exposes list & item APIs.
 type TodoHandler struct {
 	svc domain.TodoService
 }
 
+// NewTodoHandler wires the todo service into HTTP layer.
 func NewTodoHandler(svc domain.TodoService) *TodoHandler {
 	return &TodoHandler{svc: svc}
 }
 
+// GetLists returns all lists the user has access to.
 func (h *TodoHandler) GetLists(w http.ResponseWriter, r *http.Request) {
 	userID, _ := strconv.ParseInt(r.Header.Get("X-User-ID"), 10, 64)
 	lists, err := h.svc.GetLists(userID)
@@ -28,6 +33,7 @@ func (h *TodoHandler) GetLists(w http.ResponseWriter, r *http.Request) {
 	json.NewEncoder(w).Encode(lists)
 }
 
+// CreateList creates a new list owned by the current user.
 func (h *TodoHandler) CreateList(w http.ResponseWriter, r *http.Request) {
 	userID, _ := strconv.ParseInt(r.Header.Get("X-User-ID"), 10, 64)
 	var req struct {
@@ -43,6 +49,7 @@ func (h *TodoHandler) CreateList(w http.ResponseWriter, r *http.Request) {
 	json.NewEncoder(w).Encode(list)
 }
 
+// DeleteList removes a list (owner only).
 func (h *TodoHandler) DeleteList(w http.ResponseWriter, r *http.Request) {
 	userID, _ := strconv.ParseInt(r.Header.Get("X-User-ID"), 10, 64)
 	listID, _ := strconv.ParseInt(chi.URLParam(r, "id"), 10, 64)
@@ -54,10 +61,11 @@ func (h *TodoHandler) DeleteList(w http.ResponseWriter, r *http.Request) {
 	w.WriteHeader(http.StatusOK)
 }
 
+// ShareList grants another user access to a list.
 func (h *TodoHandler) ShareList(w http.ResponseWriter, r *http.Request) {
 	userID, _ := strconv.ParseInt(r.Header.Get("X-User-ID"), 10, 64)
 	listID, _ := strconv.ParseInt(chi.URLParam(r, "id"), 10, 64)
-	
+
 	var req struct {
 		Email string `json:"email"`
 		Role  string `json:"role"`
@@ -71,10 +79,11 @@ func (h *TodoHandler) ShareList(w http.ResponseWriter, r *http.Request) {
 	w.WriteHeader(http.StatusOK)
 }
 
+// GetItems returns items for a list.
 func (h *TodoHandler) GetItems(w http.ResponseWriter, r *http.Request) {
 	userID, _ := strconv.ParseInt(r.Header.Get("X-User-ID"), 10, 64)
 	listID, _ := strconv.ParseInt(chi.URLParam(r, "id"), 10, 64)
-	
+
 	items, err := h.svc.GetItems(userID, listID)
 	if err != nil {
 		http.Error(w, err.Error(), 500)
@@ -83,10 +92,12 @@ func (h *TodoHandler) GetItems(w http.ResponseWriter, r *http.Request) {
 	json.NewEncoder(w).Encode(items)
 }
 
+// AddItem creates a simple item (legacy API).
 func (h *TodoHandler) AddItem(w http.ResponseWriter, r *http.Request) {
 	userID, _ := strconv.ParseInt(r.Header.Get("X-User-ID"), 10, 64)
 	listID, _ := strconv.ParseInt(chi.URLParam(r, "id"), 10, 64)
-	
+	log.Printf("📥 [TodoHandler] AddItem request user=%d list=%d", userID, listID)
+
 	var req struct {
 		Content string `json:"content"`
 	}
@@ -100,10 +111,11 @@ func (h *TodoHandler) AddItem(w http.ResponseWriter, r *http.Request) {
 	json.NewEncoder(w).Encode(item)
 }
 
+// UpdateItem toggles completion flag (legacy API).
 func (h *TodoHandler) UpdateItem(w http.ResponseWriter, r *http.Request) {
 	userID, _ := strconv.ParseInt(r.Header.Get("X-User-ID"), 10, 64)
 	itemID, _ := strconv.ParseInt(chi.URLParam(r, "id"), 10, 64)
-	
+
 	// We need ListID for sharding routing.
 	// In REST, best practice is /lists/{listID}/items/{itemID}
 	// But our route is /items/{id}.
@@ -112,7 +124,7 @@ func (h *TodoHandler) UpdateItem(w http.ResponseWriter, r *http.Request) {
 	// Let's assume we change route later, but for now we extract from body if possible or error.
 	// Wait, the UI code sends it? No.
 	// Best fix: Require list_id in JSON body for update.
-	
+
 	var req struct {
 		ListID int64 `json:"list_id"` // Added requirement
 		IsDone bool  `json:"is_done"`
@@ -132,10 +144,11 @@ func (h *TodoHandler) UpdateItem(w http.ResponseWriter, r *http.Request) {
 	json.NewEncoder(w).Encode(item)
 }
 
+// DeleteItem removes an item from list.
 func (h *TodoHandler) DeleteItem(w http.ResponseWriter, r *http.Request) {
 	userID, _ := strconv.ParseInt(r.Header.Get("X-User-ID"), 10, 64)
 	itemID, _ := strconv.ParseInt(chi.URLParam(r, "id"), 10, 64)
-	
+
 	// Issue: DELETE typically no body.
 	// We should use Query Param ?list_id=...
 	listIDStr := r.URL.Query().Get("list_id")
@@ -157,19 +170,24 @@ func (h *TodoHandler) DeleteItem(w http.ResponseWriter, r *http.Request) {
 func (h *TodoHandler) CreateItemExtended(w http.ResponseWriter, r *http.Request) {
 	userID, _ := strconv.ParseInt(r.Header.Get("X-User-ID"), 10, 64)
 	listID, _ := strconv.ParseInt(chi.URLParam(r, "id"), 10, 64)
-	
+	log.Printf("📥 [TodoHandler] CreateItemExtended request user=%d list=%d", userID, listID)
+
 	var item domain.TodoItem
 	if err := json.NewDecoder(r.Body).Decode(&item); err != nil {
-		http.Error(w, "Invalid request body", 400)
+		msg := fmt.Sprintf("Invalid request body: %v", err)
+		log.Printf("❌ [TodoHandler] CreateItemExtended decode error user=%d list=%d err=%v", userID, listID, err)
+		http.Error(w, msg, 400)
 		return
 	}
+	logPayload := fmt.Sprintf("user=%d list=%d item=%+v", userID, listID, item)
+	log.Printf("📦 [TodoHandler] CreateItemExtended payload %s", logPayload)
 
 	createdItem, err := h.svc.CreateItemExtended(userID, listID, &item)
 	if err != nil {
 		http.Error(w, err.Error(), 500)
 		return
 	}
-	
+
 	w.Header().Set("Content-Type", "application/json")
 	json.NewEncoder(w).Encode(createdItem)
 }
@@ -178,7 +196,7 @@ func (h *TodoHandler) CreateItemExtended(w http.ResponseWriter, r *http.Request)
 func (h *TodoHandler) UpdateItemExtended(w http.ResponseWriter, r *http.Request) {
 	userID, _ := strconv.ParseInt(r.Header.Get("X-User-ID"), 10, 64)
 	itemID, _ := strconv.ParseInt(chi.URLParam(r, "id"), 10, 64)
-	
+
 	var req struct {
 		ListID      int64   `json:"list_id"`
 		Name        string  `json:"name"`
@@ -215,7 +233,7 @@ func (h *TodoHandler) UpdateItemExtended(w http.ResponseWriter, r *http.Request)
 		http.Error(w, err.Error(), 500)
 		return
 	}
-	
+
 	w.Header().Set("Content-Type", "application/json")
 	json.NewEncoder(w).Encode(updatedItem)
 }
@@ -224,7 +242,7 @@ func (h *TodoHandler) UpdateItemExtended(w http.ResponseWriter, r *http.Request)
 func (h *TodoHandler) GetItemsFiltered(w http.ResponseWriter, r *http.Request) {
 	userID, _ := strconv.ParseInt(r.Header.Get("X-User-ID"), 10, 64)
 	listID, _ := strconv.ParseInt(chi.URLParam(r, "id"), 10, 64)
-	
+
 	// 解析筛选参数
 	filter := &domain.ItemFilter{}
 	if status := r.URL.Query().Get("status"); status != "" {
@@ -244,7 +262,7 @@ func (h *TodoHandler) GetItemsFiltered(w http.ResponseWriter, r *http.Request) {
 	if tags := r.URL.Query()["tags"]; len(tags) > 0 {
 		filter.Tags = tags
 	}
-	
+
 	// 解析排序参数
 	sort := &domain.ItemSort{}
 	if sortField := r.URL.Query().Get("sort"); sortField != "" {
@@ -253,13 +271,13 @@ func (h *TodoHandler) GetItemsFiltered(w http.ResponseWriter, r *http.Request) {
 			sort.Desc = true
 		}
 	}
-	
+
 	items, err := h.svc.GetItemsFiltered(userID, listID, filter, sort)
 	if err != nil {
 		http.Error(w, err.Error(), 500)
 		return
 	}
-	
+
 	w.Header().Set("Content-Type", "application/json")
 	json.NewEncoder(w).Encode(items)
 }
@@ -269,19 +287,19 @@ func parseDueDate(dateStr *string) *time.Time {
 	if dateStr == nil || *dateStr == "" {
 		return nil
 	}
-	
+
 	// 尝试多种日期格式
 	formats := []string{
 		"2006-01-02T15:04:05Z07:00", // RFC3339
-		"2006-01-02 15:04:05",        // MySQL datetime
-		"2006-01-02",                 // Date only
+		"2006-01-02 15:04:05",       // MySQL datetime
+		"2006-01-02",                // Date only
 	}
-	
+
 	for _, format := range formats {
 		if t, err := time.Parse(format, *dateStr); err == nil {
 			return &t
 		}
 	}
-	
+
 	return nil
 }

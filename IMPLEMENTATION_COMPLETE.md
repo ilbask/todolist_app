@@ -122,7 +122,7 @@ todolist-app/
 │       ├── benchmark_data_gen.go   # 数据生成
 │       ├── check_missing_tables.go # 检查缺失表
 │       ├── cleanup_db.go           # 清理数据库
-│       ├── find_shard_accurate.go  # 分片查询（准确）
+│   ├── find_shard_accurate/  # 分片查询（准确）
 │       ├── fix_missing_tables.go   # 修复缺失表
 │       ├── init_sharding_v6.go     # 分片初始化
 │       ├── setup_mysql.go          # MySQL设置
@@ -305,7 +305,7 @@ go run cmd/tools/fix_missing_tables.go
 go run cmd/tools/cleanup_db.go
 
 # 查询分片位置
-go run cmd/tools/find_shard_accurate.go -user=123456
+go run cmd/find_shard_accurate -user=123456
 ```
 
 ### 压测工具

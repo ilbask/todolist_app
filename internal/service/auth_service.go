@@ -5,6 +5,10 @@ import (
 	"fmt"
 	"log"
 	"math/rand"
+	"strings"
+
+	"github.com/go-sql-driver/mysql"
+
 	"todolist-app/internal/domain"
 	"todolist-app/internal/infrastructure"
 )
@@ -48,7 +52,11 @@ func (s *authService) Register(email, password string) (string, error) {
 	}
 
 	if err := s.repo.Create(user); err != nil {
-		return "", err
+		// shield DB details (e.g., uk_email) from response
+		if isDuplicateErr(err) {
+			return "", errors.New("email already registered")
+		}
+		return "", errors.New("failed to register, please try again")
 	}
 
 	// 5. Send Email
@@ -62,7 +70,7 @@ func (s *authService) Verify(email, code string) error {
 	if err != nil || user == nil {
 		return errors.New("user not found")
 	}
-	if user.VerificationCode != code {
+	if normalizeCode(user.VerificationCode) != normalizeCode(code) {
 		return errors.New("invalid code")
 	}
 	return s.repo.UpdateVerification(email, true)
@@ -89,4 +97,29 @@ func (s *authService) Login(email, password string) (string, *domain.User, error
 	// In real app, generate JWT
 	token := fmt.Sprintf("%d", user.ID)
 	return token, user, nil
+}
+
+func isDuplicateErr(err error) bool {
+	var me *mysql.MySQLError
+	if errors.As(err, &me) {
+		return me.Number == 1062
+	}
+	// fallback string check
+	return err != nil && (containsIgnoreCase(err.Error(), "duplicate entry") || containsIgnoreCase(err.Error(), "uk_email"))
+}
+
+func containsIgnoreCase(s, sub string) bool {
+	if s == "" || sub == "" {
+		return false
+	}
+	return strings.Contains(strings.ToLower(s), strings.ToLower(sub))
+}
+
+// normalizeCode trims spaces and left-pads to 4 digits to accept inputs like "12" vs "0012"
+func normalizeCode(v string) string {
+	v = strings.TrimSpace(v)
+	if len(v) >= 4 {
+		return v
+	}
+	return strings.Repeat("0", 4-len(v)) + v
 }

@@ -132,7 +132,7 @@ GET    /api/lists/{id}/items/filtered     # 筛选/排序查询
 | `cmd/tools/check_missing_tables.go` | 检查缺失表 | ✅ |
 | `cmd/tools/fix_missing_tables.go` | 修复缺失表 | ✅ |
 | `cmd/tools/migrate_items_schema.go` | Schema迁移 | ✅ |
-| `cmd/tools/find_shard_accurate.go` | 精确定位分片 | ✅ |
+| `cmd/find_shard_accurate/` | 精确定位分片 | ✅ |
 | `cmd/tools/verify_sharding.go` | 验证分片配置 | ✅ |
 
 ---

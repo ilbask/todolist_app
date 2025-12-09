@@ -191,4 +191,48 @@ func (s *CachedTodoService) DeleteItem(userID, listID, itemID int64) error {
 	return nil
 }
 
+// CreateItemExtended creates an extended item with all fields and invalidates cache
+func (s *CachedTodoService) CreateItemExtended(userID, listID int64, item *domain.TodoItem) (*domain.TodoItem, error) {
+	newItem, err := s.base.CreateItemExtended(userID, listID, item)
+	if err != nil {
+		log.Printf("❌ [CachedTodoService] base CreateItemExtended failed list=%d err=%v", listID, err)
+		return nil, err
+	}
 
+	// Invalidate items cache
+	if s.redis.IsAvailable() {
+		s.redis.Del(s.ctx, itemsKey(listID))
+	}
+
+	return newItem, nil
+}
+
+// UpdateItemExtended updates an extended item and invalidates cache
+func (s *CachedTodoService) UpdateItemExtended(userID, listID int64, item *domain.TodoItem) (*domain.TodoItem, error) {
+	updatedItem, err := s.base.UpdateItemExtended(userID, listID, item)
+	if err != nil {
+		return nil, err
+	}
+
+	// Invalidate items cache
+	if s.redis.IsAvailable() {
+		s.redis.Del(s.ctx, itemsKey(listID))
+	}
+
+	return updatedItem, nil
+}
+
+// GetItemsFiltered retrieves items with filtering and sorting (with cache)
+func (s *CachedTodoService) GetItemsFiltered(userID, listID int64, filter *domain.ItemFilter, sort *domain.ItemSort) ([]domain.TodoItem, error) {
+	// Note: For simplicity, we don't cache filtered results as cache keys would be too complex
+	// In production, you might want to implement a more sophisticated caching strategy
+	// or only cache the most common filter combinations
+
+	// For now, we always go to the database for filtered queries
+	items, err := s.base.GetItemsFiltered(userID, listID, filter, sort)
+	if err != nil {
+		return nil, err
+	}
+
+	return items, nil
+}

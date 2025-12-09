@@ -8,7 +8,10 @@
 set -eo pipefail  # Exit on error, but allow pipeline failures
 
 APP_NAME="todo_app"
+REALTIME_NAME="realtime_app"
 RUN_IN_FOREGROUND=false
+REALTIME_PORT="${REALTIME_PORT:-8091}"
+AUTO_RESTART="${AUTO_RESTART:-false}"
 
 # Parse arguments
 while [[ $# -gt 0 ]]; do
@@ -17,10 +20,15 @@ while [[ $# -gt 0 ]]; do
             RUN_IN_FOREGROUND=true
             shift
             ;;
+        -r|--restart)
+            AUTO_RESTART=true
+            shift
+            ;;
         -h|--help)
             echo "Usage: ./start.sh [options]"
             echo "Options:"
             echo "  -f, --foreground  Run in foreground (see logs in terminal)"
+            echo "  -r, --restart     Auto-restart services on exit (loop)"
             echo "  -h, --help        Show this help message"
             exit 0
             ;;
@@ -86,20 +94,15 @@ echo ""
 echo "🔍 Checking for existing processes..."
 
 KILLED_PROCESSES=false
+KILL_PATTERNS=("./$APP_NAME" "$APP_NAME" "go run cmd/api/main.go" "$REALTIME_NAME" "go run cmd/realtime/main.go")
 
-# Kill existing compiled binary
-if pgrep -f "./$APP_NAME" > /dev/null; then
-    echo "   🛑 Stopping existing $APP_NAME process..."
-    pkill -f "./$APP_NAME" || true
-    KILLED_PROCESSES=true
-fi
-
-# Kill existing "go run" processes
-if pgrep -f "go run cmd/api/main.go" > /dev/null; then
-    echo "   🛑 Stopping existing 'go run' process..."
-    pkill -f "go run cmd/api/main.go" || true
-    KILLED_PROCESSES=true
-fi
+for pattern in "${KILL_PATTERNS[@]}"; do
+    if pgrep -f "$pattern" > /dev/null 2>&1; then
+        echo "   🛑 Stopping processes matching '$pattern'..."
+        pkill -f "$pattern" || true
+        KILLED_PROCESSES=true
+    fi
+done
 
 if [ "$KILLED_PROCESSES" = true ]; then
     echo "   ⏳ Waiting 2 seconds for ports to release..."
@@ -125,6 +128,20 @@ else
     echo "   ✓ Port 8080 is available"
 fi
 
+# Check realtime port
+echo "🔌 Checking realtime port ${REALTIME_PORT}..."
+if lsof -Pi :${REALTIME_PORT} -sTCP:LISTEN -t >/dev/null 2>&1 ; then
+    echo "   ⚠️  Port ${REALTIME_PORT} is still in use!"
+    read -p "   Continue anyway? (y/N): " -n 1 -r
+    echo
+    if [[ ! $REPLY =~ ^[Yy]$ ]]; then
+        echo "   ❌ Aborted. Please free port ${REALTIME_PORT} and try again."
+        exit 1
+    fi
+else
+    echo "   ✓ Port ${REALTIME_PORT} is available"
+fi
+
 # 6. Build or Run
 echo ""
 echo "=========================================="
@@ -142,11 +159,50 @@ if go build -o $APP_NAME cmd/api/main.go 2>/dev/null; then
         echo "   Running in FOREGROUND mode (Ctrl+C to stop)"
         echo "=========================================="
         echo ""
-        ./$APP_NAME
+        if [ "$AUTO_RESTART" = true ]; then
+            echo "   Auto-restart enabled for API"
+            while true; do
+                ./$APP_NAME
+                EXIT_CODE=$?
+                echo "API exited with $EXIT_CODE, restarting in 2s..."
+                sleep 2
+            done &
+        else
+            ./$APP_NAME &
+        fi
+        API_PID=$!
+        echo "   API PID: $API_PID"
+        echo "🚀 Starting realtime (${REALTIME_PORT})..."
+        REALTIME_LOG="log/realtime.log"
+        mkdir -p log
+        REALTIME_CMD="REALTIME_PORT=${REALTIME_PORT} go run cmd/realtime/main.go"
+        if [ "$AUTO_RESTART" = true ]; then
+            echo "   Auto-restart enabled for realtime"
+            nohup bash -c "while true; do $REALTIME_CMD; echo \"realtime exited $?; restarting in 2s\"; sleep 2; done" > $REALTIME_LOG 2>&1 &
+        else
+            nohup bash -c "$REALTIME_CMD" > $REALTIME_LOG 2>&1 &
+        fi
+        REALTIME_PID=$!
+        echo "   Realtime PID: $REALTIME_PID (logs: $REALTIME_LOG)"
+        wait $API_PID
     else
         echo "   Running in BACKGROUND mode"
-        nohup ./$APP_NAME > /dev/null 2>&1 &
+        if [ "$AUTO_RESTART" = true ]; then
+            nohup bash -c "while true; do ./$APP_NAME; echo \"API exited $?; restarting in 2s\"; sleep 2; done" > /dev/null 2>&1 &
+        else
+            nohup ./$APP_NAME > /dev/null 2>&1 &
+        fi
         APP_PID=$!
+        echo "🚀 Starting realtime (${REALTIME_PORT})..."
+        REALTIME_LOG="log/realtime.log"
+        mkdir -p log
+        REALTIME_CMD="REALTIME_PORT=${REALTIME_PORT} go run cmd/realtime/main.go"
+        if [ "$AUTO_RESTART" = true ]; then
+            nohup bash -c "while true; do $REALTIME_CMD; echo \"realtime exited $?; restarting in 2s\"; sleep 2; done" > $REALTIME_LOG 2>&1 &
+        else
+            nohup bash -c "$REALTIME_CMD" > $REALTIME_LOG 2>&1 &
+        fi
+        REALTIME_PID=$!
         
         echo ""
         echo "=========================================="
@@ -154,9 +210,13 @@ if go build -o $APP_NAME cmd/api/main.go 2>/dev/null; then
         echo "=========================================="
         echo "   PID: $APP_PID"
         echo "   URL: http://localhost:8080"
+        echo "   Realtime PID: $REALTIME_PID"
+        echo "   Realtime Port: ${REALTIME_PORT}"
+        echo "   Realtime Logs: $REALTIME_LOG"
         echo "   Logs: tail -f log/app.log"
         echo ""
         echo "To stop: pkill -f $APP_NAME"
+        echo "To stop realtime: pkill -f \"cmd/realtime/main.go\""
         echo "To run in foreground: ./start.sh -f"
         echo "=========================================="
     fi
@@ -172,11 +232,50 @@ else
         echo "   Running in FOREGROUND mode (Ctrl+C to stop)"
         echo "=========================================="
         echo ""
-        go run cmd/api/main.go
+        if [ "$AUTO_RESTART" = true ]; then
+            echo "   Auto-restart enabled for API (go run)"
+            while true; do
+                go run cmd/api/main.go
+                EXIT_CODE=$?
+                echo "API (go run) exited with $EXIT_CODE, restarting in 2s..."
+                sleep 2
+            done &
+        else
+            go run cmd/api/main.go &
+        fi
+        API_PID=$!
+        echo "   API PID: $API_PID"
+        echo "🚀 Starting realtime (${REALTIME_PORT})..."
+        REALTIME_LOG="log/realtime.log"
+        mkdir -p log
+        REALTIME_CMD="REALTIME_PORT=${REALTIME_PORT} go run cmd/realtime/main.go"
+        if [ "$AUTO_RESTART" = true ]; then
+            echo "   Auto-restart enabled for realtime"
+            nohup bash -c "while true; do $REALTIME_CMD; echo \"realtime exited $?; restarting in 2s\"; sleep 2; done" > $REALTIME_LOG 2>&1 &
+        else
+            nohup bash -c "$REALTIME_CMD" > $REALTIME_LOG 2>&1 &
+        fi
+        REALTIME_PID=$!
+        echo "   Realtime PID: $REALTIME_PID (logs: $REALTIME_LOG)"
+        wait $API_PID
     else
         echo "   Running in BACKGROUND mode"
-        nohup go run cmd/api/main.go > /dev/null 2>&1 &
+        if [ "$AUTO_RESTART" = true ]; then
+            nohup bash -c "while true; do go run cmd/api/main.go; echo \"API (go run) exited $?; restarting in 2s\"; sleep 2; done" > /dev/null 2>&1 &
+        else
+            nohup go run cmd/api/main.go > /dev/null 2>&1 &
+        fi
         APP_PID=$!
+        echo "🚀 Starting realtime (${REALTIME_PORT})..."
+        REALTIME_LOG="log/realtime.log"
+        mkdir -p log
+        REALTIME_CMD="REALTIME_PORT=${REALTIME_PORT} go run cmd/realtime/main.go"
+        if [ "$AUTO_RESTART" = true ]; then
+            nohup bash -c "while true; do $REALTIME_CMD; echo \"realtime exited $?; restarting in 2s\"; sleep 2; done" > $REALTIME_LOG 2>&1 &
+        else
+            nohup bash -c "$REALTIME_CMD" > $REALTIME_LOG 2>&1 &
+        fi
+        REALTIME_PID=$!
         
         echo ""
         echo "=========================================="
@@ -184,9 +283,13 @@ else
         echo "=========================================="
         echo "   PID: $APP_PID"
         echo "   URL: http://localhost:8080"
+        echo "   Realtime PID: $REALTIME_PID"
+        echo "   Realtime Port: ${REALTIME_PORT}"
+        echo "   Realtime Logs: $REALTIME_LOG"
         echo "   Logs: tail -f log/app.log"
         echo ""
         echo "To stop: pkill -f 'go run cmd/api/main.go'"
+        echo "To stop realtime: pkill -f \"cmd/realtime/main.go\""
         echo "To run in foreground: ./start.sh -f"
         echo "=========================================="
     fi

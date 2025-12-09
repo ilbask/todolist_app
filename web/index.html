@@ -5,71 +5,202 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TodoList Demo</title>
     <style>
-        body { font-family: sans-serif; max-width: 800px; margin: 0 auto; padding: 20px; }
+        :root {
+            --bg: #f9fbff;
+            --panel: #ffffff;
+            --panel-2: #f5f7fb;
+            --accent: #2563eb;
+            --accent-2: #8b5cf6;
+            --text: #0f172a;
+            --muted: #6b7280;
+            --danger: #ef4444;
+            --radius: 12px;
+            --shadow: 0 18px 36px rgba(17, 24, 39, 0.12);
+        }
+        * { box-sizing: border-box; }
+        body {
+            margin: 0;
+            font-family: "Inter", "SF Pro Display", system-ui, -apple-system, sans-serif;
+            background: linear-gradient(180deg, #ffffff 0%, #f3f7ff 100%);
+            color: var(--text);
+            min-height: 100vh;
+            padding: 32px 20px 60px;
+        }
+        h1, h3 { margin: 0 0 10px; }
+        a { color: var(--accent); }
         .hidden { display: none; }
-        .card { border: 1px solid #ccc; padding: 15px; margin-bottom: 10px; border-radius: 5px; }
-        .btn { padding: 5px 10px; cursor: pointer; }
-        .btn-red { background-color: #ffcccc; }
-        .input-group { margin-bottom: 10px; }
-        label { display: block; margin-bottom: 5px; }
-        input { padding: 5px; width: 100%; box-sizing: border-box; }
-        .flex { display: flex; justify-content: space-between; align-items: center; }
-        .completed { text-decoration: line-through; color: #888; }
+        .container { max-width: 980px; margin: 0 auto; }
+        .panel {
+            background: linear-gradient(180deg, var(--panel), var(--panel-2));
+            border: 1px solid rgba(0,0,0,0.05);
+            border-radius: var(--radius);
+            box-shadow: var(--shadow);
+            padding: 18px;
+            margin-bottom: 16px;
+            min-width: 0; /* prevent overflow */
+        }
+        .panel-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 12px;
+            flex-wrap: wrap;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 16px;
+            width: 100%;
+        }
+        .card {
+            background: rgba(255,255,255,0.02);
+            border: 1px solid rgba(255,255,255,0.05);
+            border-radius: var(--radius);
+            padding: 16px;
+        }
+        .btn {
+            padding: 10px 14px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-weight: 600;
+            color: #fff;
+            background: linear-gradient(90deg, var(--accent), var(--accent-2));
+            transition: transform 0.1s ease, box-shadow 0.2s;
+            box-shadow: 0 8px 20px rgba(59,130,246,0.25);
+        }
+        .btn:hover { transform: translateY(-1px); }
+        .btn:active { transform: translateY(0); }
+        .btn.red { background: var(--danger); box-shadow: 0 8px 20px rgba(239,68,68,0.25); }
+        .input-group { margin-bottom: 12px; }
+        input, select {
+            width: 100%;
+            padding: 10px 12px;
+            border-radius: 8px;
+            border: 1px solid rgba(255,255,255,0.08);
+            background: rgba(255,255,255,0.04);
+            color: var(--text);
+        }
+        input:focus, select:focus { outline: 1px solid rgba(59,130,246,0.5); }
+        .flex { display: flex; justify-content: space-between; align-items: center; gap: 10px; }
+        .muted { color: var(--muted); }
+        .badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            padding: 4px 10px;
+            border-radius: 999px;
+            font-size: 12px;
+            background: rgba(59,130,246,0.15);
+            color: #bfdbfe;
+        }
+        .badge.green { background: rgba(52,211,153,0.15); color: #bbf7d0; }
+        .badge.orange { background: rgba(251,146,60,0.15); color: #fed7aa; }
+        .list-card { border: 1px solid rgba(255,255,255,0.05); border-radius: var(--radius); padding: 14px; }
+        .items-grid { display: grid; gap: 10px; }
+        .item-card { border: 1px solid rgba(255,255,255,0.06); border-radius: 10px; padding: 10px 12px; background: rgba(255,255,255,0.03); }
+        .item-title { font-weight: 700; }
+        .item-desc { color: var(--muted); font-size: 0.92em; margin-top: 4px; }
+        .item-meta { color: #cbd5f5; font-size: 0.85em; margin-top: 6px; display:flex; gap:8px; flex-wrap:wrap; }
+        .completed { text-decoration: line-through; color: var(--muted); }
+        .section-title { margin-bottom: 8px; }
     </style>
 </head>
 <body>
-    <h1>TodoList App Demo</h1>
+    <div class="container">
+    <div id="toast" class="hidden" style="position:fixed; top:18px; left:50%; transform:translateX(-50%); z-index:2000; padding:12px 14px; border-radius:10px; background:rgba(34,197,94,0.12); border:1px solid rgba(34,197,94,0.4); color:#15803d; box-shadow:0 10px 30px rgba(0,0,0,0.18); max-width:420px; width:max-content; min-width:240px; text-align:center; font-weight:700;"></div>
+    <h1 style="margin-bottom:12px;">TodoList App Demo</h1>
+    <p class="muted" style="margin-top:0;">简洁示例，支持多用户协作、扩展字段、验证码、防刷登录。</p>
 
     <!-- Auth Section -->
     <div id="auth-section">
-        <div class="card">
-            <h3>Login</h3>
-            <div class="input-group">
-                <input type="email" id="login-email" placeholder="Email">
-            </div>
+        <div class="grid">
+            <div class="panel">
+                <div class="panel-header">
+                    <h3>Login</h3>
+                    <span class="badge">CAPTCHA Protected</span>
+                </div>
+                <div class="input-group">
+                    <input type="email" id="login-email" placeholder="Email">
+                </div>
             <div class="input-group">
                 <input type="password" id="login-password" placeholder="Password">
             </div>
-            <button class="btn" onclick="login()">Login</button>
+            <!--
+            <div class="input-group">
+                <div class="flex" style="gap:10px; align-items:center;">
+                    <img id="login-captcha-img" alt="captcha" style="height:48px; border:1px solid rgba(255,255,255,0.15); border-radius:8px; cursor:pointer;" onclick="refreshCaptcha('login')">
+                    <button class="btn" type="button" onclick="refreshCaptcha('login')">Refresh</button>
+                </div>
+                <input type="text" id="login-captcha-input" placeholder="Enter CAPTCHA">
+            </div>
+            -->
+            <button class="btn" style="width:100%;" onclick="login()">Login</button>
         </div>
 
-        <div class="card">
-            <h3>Register</h3>
+        <div class="panel">
+            <div class="panel-header">
+                <h3>Register</h3>
+                <span class="badge">Email Verify</span>
+            </div>
             <div class="input-group">
                 <input type="email" id="reg-email" placeholder="Email">
             </div>
             <div class="input-group">
                 <input type="password" id="reg-password" placeholder="Password">
             </div>
-            <button class="btn" onclick="register()">Send Verification Code</button>
-            
-            <div id="verify-box" class="hidden" style="margin-top: 10px; border-top: 1px dashed #ccc; padding-top: 10px;">
-                <p id="demo-code-display" style="color: red; font-weight: bold;"></p>
-                <div class="input-group">
-                    <input type="text" id="verify-code" placeholder="Verification Code">
+            <!--
+            <div class="input-group">
+                <div class="flex" style="gap:10px; align-items:center;">
+                    <img id="reg-captcha-img" alt="captcha" style="height:48px; border:1px solid rgba(255,255,255,0.15); border-radius:8px; cursor:pointer;" onclick="refreshCaptcha('reg')">
+                    <button class="btn" type="button" onclick="refreshCaptcha('reg')">Refresh</button>
                 </div>
-                <button class="btn" onclick="verify()">Verify & Register</button>
+                <input type="text" id="reg-captcha-input" placeholder="Enter CAPTCHA">
+            </div>
+            -->
+            <button class="btn" style="width:100%;" onclick="register()">Send Verification Code</button>
+                
+                <div id="verify-box" class="hidden" style="margin-top: 14px; border-top: 1px dashed rgba(255,255,255,0.12); padding-top: 12px;">
+                    <p id="demo-code-display" style="color: #f97316; font-weight: 700; margin: 0 0 8px;"></p>
+                    <div class="input-group">
+                        <input type="text" id="verify-code" placeholder="Verification Code">
+                    </div>
+                    <button class="btn" style="width:100%;" onclick="verify()">Verify & Register</button>
+                </div>
             </div>
         </div>
     </div>
 
     <!-- App Section -->
     <div id="app-section" class="hidden">
-        <div class="flex">
-            <h3>My Lists</h3>
-            <button class="btn" onclick="logout()">Logout</button>
-        </div>
-        <p>Logged in as: <span id="current-user"></span> (ID: <span id="current-user-id"></span>)</p>
-
-        <div class="card">
-            <div class="flex">
-                <input type="text" id="new-list-title" placeholder="New List Title" style="width: 70%;">
-                <button class="btn" onclick="createList()">Create List</button>
+        <div class="panel">
+            <div class="panel-header">
+                <div>
+                    <div class="muted" style="font-size:13px;">Logged in as</div>
+                    <div><strong><span id="current-user"></span></strong> <span class="muted">(ID: <span id="current-user-id"></span>)</span></div>
+                </div>
+                <button class="btn" onclick="logout()">Logout</button>
             </div>
         </div>
 
-        <div id="lists-container">
-            <!-- Lists will be rendered here -->
+        <div class="panel">
+            <div class="panel-header">
+                <h3>Create List</h3>
+            </div>
+            <div class="flex" style="gap:10px;">
+                <input type="text" id="new-list-title" placeholder="New List Title" style="flex:1;">
+                <button class="btn" onclick="createList()">Create</button>
+            </div>
+        </div>
+
+        <div class="panel">
+            <div class="panel-header">
+                <h3>My Lists</h3>
+                <span class="muted" style="font-size:13px;">协作演示：可分享给其他用户</span>
+            </div>
+            <div id="lists-container" class="grid">
+                <!-- Lists render here -->
+            </div>
         </div>
     </div>
 
@@ -91,6 +222,7 @@
     </div>
 
     <script src="app.js"></script>
+    </div>
 </body>
 </html>
 
